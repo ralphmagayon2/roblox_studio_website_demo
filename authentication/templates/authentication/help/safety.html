@@ -1,0 +1,222 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - Safety Center{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/help/safety.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="safety-wrapper">
+        <div class="safety-container">
+
+            {% comment %} Hero Section {% endcomment %}
+            <div class="safety-hero">
+                <h1>SAFETY CENTER</h1>
+                <p>Your safety is our top priority, Lear about our safety features, parental cotrols, privacy settigs, and best practices to stay safety while enjoying Roblox.</p>
+            </div>
+
+            {% comment %} Missio Statemet {% endcomment %}
+            <div class="mission-statement">
+                <h2>OUR COMMITMENT TO SAFETY</h2>
+                <p>At Roblox, we're dedicated to building safe, civil, and diverse community. We cutting-edge technology, experienced moderation teams, and proactive safety features to ensure everyone can create, play, and connect safely.</p>
+            </div>
+            <h2 class="section-title">SAFETY MEASURES</h2>
+            <p class="section-subtitle">Powerful tools to keep you protected</p>
+
+            <div class="safety-features-grid">
+
+                <div class="safety-feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-user-shield"></i></div>
+                    <h3>Account Security</h3>
+                    <p>Enable two-factor authentication, use strong passwords, and protect your account from unauthorized access with our security features.</p>
+                    <a href="" class="feature-link">Manage Privacy <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="safety-feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-user-lock"></i></div>
+                    <h3>Privacy Settings</h3>
+                    <p>Control who can contact you, join your games, and see your activity. Customize your privacy to match your comfort level.</p>
+                    <a href="" class="feature-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="safety-feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-ban"></i></div>
+                    <h3>Block & Report</h3>
+                    <p>Instantly block users and report inappropriate behavior, content, or harassment to our moderation team for review.</p>
+                    <a href="" class="feature-link">How to Report <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="safety-feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-filter"></i></div>
+                    <h3>Chat Filtering</h3>
+                    <p>Our advance filtering system automatically removes inappropriate language, personal information, and harmful content from chat.</p>
+                    <a href="" class="feature-link">About Filters <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="safety-feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-users-gear"></i></div>
+                    <h3>Parental Control</h3>
+                    <p>Parent can restrict chat, limit spending, monitor activity, and receive monthly account summaries for their children's accounts..</p>
+                    <a href="" class="feature-link">Set Up Controls <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="safety-feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-robot"></i></div>
+                    <h3>AI Moderation</h3>
+                    <p>Our AI-powered system work 24/7 to detect and remove harmful content before it reaches users, keeping the platform clean.</p>
+                    <a href="" class="feature-link">Our Technology <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+
+            {% comment %} Parents Guide {% endcomment %}
+            <div class="parents-guide">
+                <h2>GUIDE FOR PARENT</h2>
+                <p>Essential steps to ensure your child's safety on Roblox</p>
+
+                <div class="guide-steps">
+
+                    <div class="guide-step">
+                        <div class="step-number">1</div>
+                        <h4>Create a Parent Account</h4>
+                        <p>Set up your own Roblox account to better understand the platform and monitor your child's activity.</p>
+                    </div>
+
+                    <div class="guide-step">
+                        <div class="step-number">2</div>
+                        <h4>Set Age-Appropriate Settings</h4>
+                        <p>Configure account restrictions, privacy settings, and spending limits based on your child's age.</p>
+                    </div>
+
+                    <div class="guide-step">
+                        <div class="step-number">3</div>
+                        <h4>Enable Parental Controls</h4>
+                        <p>Use PIN protection, restrict chat features, and control who can communicate with your child.</p>
+                    </div>
+
+                    <div class="guide-step">
+                        <div class="step-number">4</div>
+                        <h4>Educate About Online Safety</h4>
+                        <p>Teach your child about not sharing personal information and how to report inappropriate behavior.</p>
+                    </div>
+
+                    <div class="guide-step">
+                        <div class="step-number">5</div>
+                        <h4>Review Account Activity</h4>
+                        <p>Regularly check your child's friends list, game history, and chat logs to stay informed.</p>
+                    </div>
+
+                    <div class="guide-step">
+                        <div class="step-number">6</div>
+                        <h4>Stay Involved</h4>
+                        <p>Play games together, discuss their experiences, and maintain open communication about their online interactions.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            {% comment %} Safety Tips {% endcomment %}
+            <h2 class="section-title">SAFETY TIPS</h2>
+            <p class="section-subtitle">Best practices for staying safe online</p>
+
+            <div class="safety-tips-section">
+                <div class="tips-grid">
+
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fa-solid fa-key"></i></div>
+                        <h4>Protect Your Password</h4>
+                        <p>Never share your password with anyone, including friends. Use a unique, strong password and enable two-factor authentication.</p>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fa-solid fa-id-card"></i></div>
+                        <h4>Keep Personal Info Private</h4>
+                        <p>Don't share your real name, address, phone number, school or other personal details with strangers online.</p>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fa-solid fa-exclamation-triangle"></i></div>
+                        <h4>Be Cautious of Scams</h4>
+                        <p>Beware of offer that seem to good to be true. Never click suspicious links or download files from unknown sources.</p>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fa-solid fa-comments"></i></div>
+                        <h4>Community Safety</h4>
+                        <p>Be respectful in all interactions. If someone makes your uncomfortable, block them immediately and report the behavior</p>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fa-solid fa-credit-card"></i></div>
+                        <h4>Manage Spending</h4>
+                        <p>Set spending limits, use parental controls for purchases, and only buy Robux through official Roblox channels.</p>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon"><i class="fa-solid fa-user-friends"></i></div>
+                        <h4>Choose Friends Carefully</h4>
+                        <p>Only accept friend request from people you know in real life. Be selective about who you trust online.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            {% comment %} Resources {% endcomment %}
+            <div class="resources-section">
+                <h2>SAFETY RESOURCES</h2>
+
+                <div class="resources-grid">
+                    
+                    <a href="#" class="resource-card">
+                        <div class="resource-icon"><i class="fa-solid fa-book"></i></div>
+                        <h4>Safety Guards</h4>
+                        <p>Comprehensive guide covering all aspects of staying safe on Roblox</p>
+                        <span class="resource-link-text">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="#" class="resource-card">
+                        <div class="resource-icon"><i class="fa-solid fa-video"></i></div>
+                        <h4>Video Tutorial</h4>
+                        <p>Watch step-by-step videos on privacy settings and safety features</p>
+                        <span class="resource-link-text">Watch Videos <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="#" class="resource-card">
+                        <div class="resource-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <h4>Printable Materials</h4>
+                        <p>Download safety checklists and guides to share with family</p>
+                        <span class="resource-link-text">Download PDFs <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="#" class="resource-card">
+                        <div class="resource-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h4>Digital Citizenship</h4>
+                        <p>Educational resources for schools and educators</p>
+                        <span class="resource-link-text">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                </div>
+            </div>
+
+            {% comment %} Emergency Contact {% endcomment %}
+            <div class="emergency-contact">
+                <h3><i class="fa-solid fa-shield-halved"></i> NEED IMMEDIATE HELP?</h3>
+                <p>If you or someone you know is in immediate danger or experiencing a serious safety concern, take action now.</p>
+
+                <div class="emergency-buttons">
+                    <a href="" class="btn-emergency">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Report Emergency
+                    </a>
+                    <a href="" class="btn-emergency">
+                        <i class="fa-solid fa-phone"></i> Contact Support
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - Login/Signup Page{% endblock title %}
+
+{% block css %}
+{% endblock css %}
+
+{% block content %}
+
+<!-- Main Content -->
+<main class="content-wrapper">
+    <div class="auth-container">
+
+        <!-- Header -->
+        <div class="auth-header">
+            <h1 class="auth-title">Welcome Back</h1>
+            <p class="auth-subtitle">Sign in to continue your adventure</p>
+        </div>
+
+        <!-- Tab Swticher -->
+        <div class="tab-switcher">
+            <button class="tab-btn active" data-tab="login">Login</button>
+            <button class="tab-btn" data-tab="signup">Sign Up</button>
+        </div>
+
+        <!-- Login Form -->
+        <form action="" class="auth-form active" id="loginForm">
+
+            <div class="form-group">
+                <label class="form-label">Username or Email</label>
+                <input type="text" id="login_username" name="username" class="form-input" placeholder="Enter your username or email" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Password</label>
+                <input type="password" id="login_password" name="password" class="form-input" placeholder="Enter your password" required>
+            </div>
+
+            <div class="form-checkbox">
+                <div class="forgot-box">
+                    <input type="checkbox" id="rememberMe" name="remember">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+
+                <div class="forgot-password">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+
+            
+
+            <button type="submit" class="btn-primary">LOGIN</button>
+
+            <div class="divider">
+                <div class="divider-line"></div>
+                <span class="divider-text">OR</span>
+                <div class="divider-line"></div>
+            </div>
+
+            <div class="social-buttons">
+                <button type="button" class="btn-social google"><span><i class="fa-brands fa-google"></i></span> Google</button>
+                <button type="button" class="btn-social discord"><span class="fa-brands fa-discord"></span> Discord</button>
+            </div>
+        </form>
+
+        <!-- Sign Up From -->
+        <form action="" class="auth-form" id="signupForm">
+            <div class="form-group">
+                <label for="" class="form-label">Username</label>
+                <input type="text" name="username" id="signup_username" class="form-input" placeholder="Choose a username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="form-label">Email</label>
+                <input type="email" name="email" id="signup_email" class="form-input" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="form-label">Password</label>
+                <input type="password" name="password" id="signup_password" class="form-input" placeholder="Create a password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="form-label">Confirm Password</label>
+                <input type="password" name="confirm_password" id="signup_confirm_password" class="form-input" placeholder="Confirm your password" required>
+            </div>
+
+            <div class="form-checkbox-terms">
+                <input type="checkbox" name="terms" id="agreeTerms" required>
+                <label for="agreeTerms">I agree to the Terms of Services</label>
+            </div>
+
+            <button type="submit" class="btn-primary">CREATE ACCOUNT</button>
+
+            <div class="divider">
+                <div class="divider-line"></div>
+                <span class="divider-text"></span>
+                <div class="divider-line"></div>
+            </div>
+
+            <div class="social-buttons">
+                <button type="button" class="btn-social google">
+                    <span><i class="fa-brands fa-google"></i> </span> Google
+                </button>
+                <button type="button" class="btn-social discord"> 
+                    <span><i class="fa-brands fa-discord"></i> </span> Discord
+                </button> 
+            </div>
+        </form>
+        
+    </div>
+</main>
+
+{% endblock content %}
+
+{% block js %}
+
+{% endblock js %}

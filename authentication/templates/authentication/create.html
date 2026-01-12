@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - Create{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/create.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="create-wrapper">
+        <div class="create-container">
+
+            {% comment %} Hero Section {% endcomment %}
+            <div class="create-hero">
+                <h1>Create Amazing Experiences</h1>
+                <p>Turn your imagination into reality with Roblox Studio. Build game, and share your creations with millions of players worldwide.</p>
+                
+                <div class="hero-buttons">
+                    <a href="" class="btn-hero primary">
+                       <span><i class="fa-solid fa-bolt-lightning"></i></span> Download Studio
+                    </a>
+                    <a href="" class="btn-hero secondary">
+                        <span><i class="fa-solid fa-book"></i></span> View Tutorials
+                    </a>
+                </div>
+            </div>
+
+            {% comment %} Feature Sections {% endcomment %}
+            <section class="features-section">
+                <h2 class="section-title">Powerful Creation Tool</h2>
+                <div class="features-grid">
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-gamepad"></i></div>
+                        <h2 class="feature-title">Game Development</h2>
+                        <p class="feature-description">Build immersive 3D experiences with our intuitive drag-and-drop editor. No coding experiences required to get started!</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-computer"></i></div>
+                        <h2 class="feature-title">Scripting with Lua</h2>
+                        <p class="feature-description">ake full control with Lua scripting. Create complex game mechanics, AI systems, and interactive experiences.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-palette"></i></div>
+                        <h2 class="feature-title">Asset Creation</h2>
+                        <p class="feature-description">Design custom models, textures, and animations. Import your assets or use our marketplace.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                        <h2 class="feature-title">Terrain Editor</h2>
+                        <p class="feature-description">Sculpt stunning landscapes with realistic water, grass, and environmental effects.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
+                        <h2 class="feature-title">Collaboration</h2>
+                        <p class="feature-description">Work together with friends in real-time. Build better experiences as a team.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+                        <h2 class="feature-title">Monetization</h2>
+                        <p class="feature-description">Earn Robux from your creations. Turn your passion into a profitable business.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            {% comment %} Templates Section {% endcomment %}
+            <section class="features-section">
+                <h2 class="section-title">Start with Templates</h2>
+                <div class="templates-grid">
+
+                    <div class="template-card">
+                        <div class="template-image">
+                            <span><i class="fa-solid fa-fire"></i></span>
+                            <span class="template-badge">POPULAR</span>
+                        </div>
+
+                        <div class="template-info">
+                            <h3 class="template-title">Obby Template</h3>
+                            <p class="template-description">Classic obstacles course with checkpoints</p>
+                            <div class="template-stats">
+                                <span><i class="fa-solid fa-users"></i> 50K+ users</span>
+                                <span><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="template-card">
+                        <div class="template-image">
+                            <span>⚔️</span>
+                            <span class="template-badge">NEW</span>
+                        </div>
+
+                        <div class="template-info">
+                            <h3 class="template-title">Battle Arena</h3>
+                            <p class="template-description">PvP combat system with weapons</p>
+                            <div class="template-stats">
+                                <span><i class="fa-solid fa-users"></i> 30K+ users</span>
+                                <span><i class="fa-solid fa-star"></i> 4.7</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="template-card">
+                        <div class="template-image">
+                            <span><i class="fa-solid fa-house"></i></span>
+                        </div>
+
+                        <div class="template-info">
+                            <h3 class="template-title">Tycoon Base</h3>
+                            <p class="template-description">Build and manage your empire</p>
+                            <div class="template-stats">
+                                <span><i class="fa-solid fa-users"></i> 40+ users</span>
+                                <span><i class="fa-solid fa-star"></i> 4.8</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="template-card">
+                        <div class="template-image">
+                            <span>🏎️</span>
+                        </div>
+
+                        <div class="template-info">
+                            <h3 class="template-title">Racing Game</h3>
+                            <p class="template-description">Vehicle physics and race tracks</p>
+                            <div class="template-stats">
+                                <span><i class="fa-solid fa-users"></i> 25K+ users</span>
+                                <span><i class="fa-solid fa-star"></i> 4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {% comment %} Learning Resources {% endcomment %}
+            <section class="features-section">
+                <h2 class="section-title">Learning Resources</h2>
+                <div class="resources-grid">
+
+                    <div class="resources-card">
+                        <div class="resources-icon">📖</div>
+                        <div class="resources-content">
+                            <h3>Documentation</h3>
+                            <p>Comprehensive guides covering every aspect of Roblox Studio from basics to advanced techniques.</p>
+                            <a href="#" class="resource-link">Read Docs →</a>
+                        </div>
+                    </div>
+
+                    <div class="resources-card">
+                        <div class="resources-icon">🎥</div>
+                        <div class="resources-content">
+                            <h3>Video Tutorials</h3>
+                            <p>Step-by-step video courses taught by experienced developers. Learn at your own pace.</p>
+                            <a href="#" class="resource-link">Watch Now →</a>
+                        </div>
+                    </div>
+
+                    <div class="resources-card">
+                        <div class="resources-icon">👨‍💻</div>
+                        <div class="resources-content">
+                            <h3>Code Samples</h3>
+                            <p>Ready-to-use scripts and examples. Copy, paste, and customize for your projects.</p>
+                            <a href="#" class="resource-link">Browse Code →</a>
+                        </div>
+                    </div>
+
+                    <div class="resources-card">
+                        <div class="resources-icon">💬</div>
+                        <div class="resources-content">
+                            <h3>Community Forum</h3>
+                            <p>Connect with other creators, ask questions, and share your knowledge with the community.</p>
+                            <a href="#" class="resource-link">Join Forum →</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            {% comment %} CTA Section {% endcomment %}
+            <div class="cta-section">
+                <h2>READY TO START CREATING?</h2>
+                <p>Download Roblox Studio today and join millions of creators worldwide</p>
+                <a href="" class="btn-hero primary">
+                    <span><i class="fa-solid fa-bolt-lightning"></i></span> Get Started Free
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}

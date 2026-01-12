@@ -1,0 +1,275 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - Developer Hub{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/resources/developer_hub.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="dev-hub-wrapper">
+        <div class="dev-hub-container">
+
+            {% comment %} Hero Section {% endcomment %}
+            <div class="dev-hero">
+                <h1>DEVELOPER HUB</h1>
+                <p>Build create, and monetize your dreams on Roblox. Access comprehensive documentation, tutorials, tools, and resources to bring your ideas to life.</p>
+
+                <div class="dev-hero-buttons">
+                    <a href="" class="btn-hero btn-hero-primary">
+                        <i class="fa-solid fa-rocket"></i> Start Creating
+                    </a>
+                    <a href="" class="btn-hero btn-hero-secondary">
+                        <i class="fa-solid fa-book-open"></i> View Documentation
+                    </a>
+                </div>
+            </div>
+
+            {% comment %} Quick Start Guide {% endcomment %}
+            <div class="quick-start-section">
+                <h2 class="section-title">QUICK START GUIDE</h2>
+                <p class="section-subtitle">Get up and running in just a few steps</p>
+
+                <div class="quick-start-grid">
+                    <div class="quick-start-card">
+                        <div class="quick-start-number">1</div>
+                        <h3>Download Roblox Studio</h3>
+                        <p>Get the free development tool used to create every experience on Roblox</p>
+                        <a href="#" class="quick-start-link">Download Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="quick-start-card">
+                        <div class="quick-start-number">2</div>
+                        <h3>Choose a Tutorial</h3>
+                        <p>Follow a step-by-step guide to build your first game or experience</p>
+                        <a href="#" class="quick-start-link">Browse Tutorials <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="quick-start-card">
+                        <div class="quick-start-number">3</div>
+                        <h3>Learn the Basics</h3>
+                        <p>Master Lua scripting, 3D modeling, and game design fundamentals</p>
+                        <a href="#" class="quick-start-link">Start Learning <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="quick-start-card">
+                        <div class="quick-start-number">4</div>
+                        <h3>Publish & Share</h3>
+                        <p>Learn your creation to millions of players worldwide</p>
+                        <a href="#" class="quick-start-link">Learn How <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            {% comment %} Learning Paths {% endcomment %}
+            <div class="learning-paths-section">
+                <h2>LEARNING PATH</h2>
+
+                <div class="learning-paths-grid">
+
+                    <div class="learning-path-card">
+                        <span class="path-badge">BEGINNER</span>
+                        <div class="path-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h4>Getting Started</h4>
+                        <p>Perfect for absolute beginers. Learn Studio basics, simple scripting, and create your first game.</p>
+                        <p class="path-lessons"><i class="fa-solid fa-book"></i> 12 Lessons • 8 hours</p>
+                        <a href="" class="btn-start-path">Start Path</a>
+                    </div>
+
+                    <div class="learning-path-card">
+                        <span class="path-badge">INTERMEDIATE</span>
+                        <div class="path-icon"><i class="fa-solid fa-code"></i></div>
+                        <h4>Lua Programming</h4>
+                        <p>Master Lua scripting with advanced techniques, OOP, and optimization strategies.</p>
+                        <p class="path-lessons"><i class="fa-solid fa-book"></i> 20 Lessons • 15 hours</p>
+                        <a href="#" class="btn-start-path">Start Path</a>
+                    </div>
+
+                    <div class="learning-path-card">
+                        <span class="path-badge">INTERMEDIATE</span>
+                        <div class="path-icon"><i class="fa-solid fa-cubes"></i></div>
+                        <h4>3D Modeling & Design</h4>
+                        <p>Create stunning environments, characters, and assets using Studio's building tools.</p>
+                        <p class="path-lessons"><i class="fa-solid fa-book"></i> 16 Lessons • 12 hours</p>
+                        <a href="#" class="btn-start-path">Start Path</a>
+                    </div>
+
+                    <div class="learning-path-card">
+                        <span class="path-badge">ADVANCED</span>
+                        <div class="path-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h4>Monetization & Growth</h4>
+                        <p>Learn strategies to earn Robux, grow your player base, and build a sustainable business.</p>
+                        <p class="path-lessons"><i class="fa-solid fa-book"></i> 10 Lessons • 6 hours</p>
+                        <a href="#" class="btn-start-path">Start Path</a>
+                    </div>
+
+                </div>
+            </div>
+
+            {% comment %} Documentation {% endcomment %}
+            <div class="documentation-section">
+                <h2 class="section-title">DOCUMENTATION</h2>
+                <p class="section-subtitle">Comprehensive guides and API references</p>
+
+                <div class="docs-grid">
+
+                    <a href="" class="doc-card">
+                        <div class="doc-icon"><i class="fa-solid fa-file-code"></i></div>
+                        <h4>API Reference</h4>
+                        <p>Complete documentation of all Roblox classes, methods, properties, and events</p>
+                    </a>
+
+                    <a href="#" class="doc-card">
+                        <div class="doc-icon"><i class="fa-solid fa-wrench"></i></div>
+                        <h4>Studio Manual</h4>
+                        <p>In-depth guide to every tool and feature in Roblox Studio</p>
+                    </a>
+
+                    <a href="#" class="doc-card">
+                        <div class="doc-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h4>Scripting Guide</h4>
+                        <p>Learn Lua programming from basics to advanced techniques</p>
+                    </a>
+
+                    <a href="#" class="doc-card">
+                        <div class="doc-icon"><i class="fa-solid fa-paintbrush"></i></div>
+                        <h4>Design Guidelines</h4>
+                        <p>Best practices for UI/UX, lighting, effects, and visual design</p>
+                    </a>
+
+                    <a href="#" class="doc-card">
+                        <div class="doc-icon"><i class="fa-solid fa-server"></i></div>
+                        <h4>Networking & Data</h4>
+                        <p>Remote events, datastores, and multiplayer game architecture</p>
+                    </a>
+
+                    <a href="#" class="doc-card">
+                        <div class="doc-icon"><i class="fa-solid fa-shield-alt"></i></div>
+                        <h4>Security Best Practices</h4>
+                        <p>Protect your game from exploits and ensure fair gameplay</p>
+                    </a>
+
+                </div>
+            </div>
+
+            {% comment %} Tools & Resources {% endcomment %}
+            <div class="tools-section">
+                <h2>TOOLS & RESOURCES</h2>
+
+                <div class="tools-grid">
+
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fa-solid fa-desktop"></i></div>
+                        <h4>Roblox Studio</h4>
+                        <p>The official IDE for creating Roblox experiences.</p>
+                        <a href="" class="btn-download"><i class="fa-solid fa-download"></i> Download</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fa-solid fa-plug"></i></div>
+                        <h4>Plugins Marketplace</h4>
+                        <p>Extend Studio with community-created tools and plugins</p>
+                        <a href="#" class="btn-download"><i class="fa-solid fa-external-link-alt"></i> Browse</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fa-solid fa-cube"></i></div>
+                        <h4>Asset Library</h4>
+                        <p>Free models, meshes, audio, and other resources</p>
+                        <a href="#" class="btn-download"><i class="fa-solid fa-external-link-alt"></i> Explore</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon"><i class="fa-solid fa-palette"></i></div>
+                        <h4>UI Design Kit</h4>
+                        <p>Templates and components for beautiful interfaces</p>
+                        <a href="#" class="btn-download"><i class="fa-solid fa-download"></i> Download</a>
+                    </div>
+
+                </div>
+            </div>
+
+            {% comment %} Success Stories {% endcomment %}
+            <div class="success-stories">
+                <h2 class="section-title">SUCCESS STORIES</h2>
+                <p class="section-subtitle">Real developers, real success on Roblox</p>
+
+                <div class="stories-grid">
+
+                    <div class="story-card">
+                        <p class="story-quote">"I started creating on Roblox as a hobby, and now it's my full-time career. I've earned over $500K and reached millions of players worldwide."</p>
+                        <div class="story-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <h5>Alex Chen</h5>
+                                <p>Creator of "Adventure Quest"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-card">
+                        <p class="story-quote">"Roblox taught me programming at 14. Now I'm studying computer science in college and my game has 50 million visits!"</p>
+                        <div class="story-author">
+                            <div class="author-avatar">S</div>
+                            <div class="author-info">
+                                <h5>Sarah Martinez</h5>
+                                <p>Creator of "Skyblock Adventures"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-card">
+                        <p class="story-quote">"What started as a small project grew into a team of 5 developers. We're now running a sustainable game studio entirely on Roblox."</p>
+                        <div class="story-author">
+                            <div class="author-avatar">J</div>
+                            <div class="author-info">
+                                <h5>James Wilson</h5>
+                                <p>Founder of Pixel Studios</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            {% comment %} Community Section {% endcomment %}
+            <div class="community-section">
+                <h2>JOIN THE DEVELOPER COMMUNITY</h2>
+                <p>Connect with the thousands of creators, get help, share your work, and stay updated with the latest platform features.</p>
+
+                <div class="community-links">
+
+                    <a href="#" class="community-link-card">
+                        <div class="community-icon"><i class="fa-brands fa-discord"></i></div>
+                        <h4>Discord Server</h4>
+                        <p>Chat with developers in real-time</p>
+                    </a>
+
+                    <a href="#" class="community-link-card">
+                        <div class="community-icon"><i class="fa-solid fa-comments"></i></div>
+                        <h4>Developer Forum</h4>
+                        <p>Ask questions and share knowledge</p>
+                    </a>
+
+                    <a href="#" class="community-link-card">
+                        <div class="community-icon"><i class="fa-brands fa-youtube"></i></div>
+                        <h4>Video Tutorials</h4>
+                        <p>Watch and learn from experts</p>
+                    </a>
+
+                    <a href="#" class="community-link-card">
+                        <div class="community-icon"><i class="fa-solid fa-newspaper"></i></div>
+                        <h4>Dev Blog</h4>
+                        <p>Latest updates and announcements</p>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}

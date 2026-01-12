@@ -1,0 +1,312 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - Report Abuse{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/help/report_abuse.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+<div class="report-wrapper">
+    <div class="report-container">
+
+        <!-- Hero Section -->
+        <div class="report-hero">
+            <h1>REPORT ABUSE</h1>
+            <p>Your reports help us keep Roblox safe for everyone. If you've experienced or witnessed inappropriate behavior, content, or violations of our Community Standards, please report it immediately.</p>
+            <div class="emergency-notice">
+                <i class="fa-solid fa-triangle-exclamation"></i> In case of immediate danger, contact local authorities first
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+
+            <div class="quick-action-card">
+                <div class="action-icon"><i class="fa-solid fa-user-slash"></i></div>
+                <h3>Block User</h3>
+                <p>Immediately prevent someone from contacting you or joining your experiences</p>
+            </div>
+
+            <div class="quick-action-card">
+                <div class="action-icon"><i class="fa-solid fa-flag"></i></div>
+                <h3>Report Content</h3>
+                <p>Flag inappropriate games, items, images, or other content for review</p>
+            </div>
+
+            <div class="quick-action-card">
+                <div class="action-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Safety Center</h3>
+                <p>Learn about privacy settings, parental controls, and safety features</p>
+            </div>
+
+        </div>
+
+        <!-- Report Types -->
+        <h2 class="section-title">WHAT CAN YOU REPORT?</h2>
+        <p class="section-subtitle">We review all reports and take appropriate action</p>
+
+        <div class="report-types-grid">
+
+            <div class="report-type-card">
+                <div class="type-header">
+                    <div class="type-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h4>Inappropriate Behavior</h4>
+                </div>
+                <p>Report users who engage in harmful or disruptive conduct</p>
+                <ul>
+                    <li>Bullying, harassment, or threats</li>
+                    <li>Hate speech or discrimination</li>
+                    <li>Sexual content or advances</li>
+                    <li>Spam or scamming attempts</li>
+                </ul>
+            </div>
+
+            <div class="report-type-card">
+                <div class="type-header">
+                    <div class="type-icon"><i class="fa-solid fa-gamepad"></i></div>
+                    <h4>Inappropriate Content</h4>
+                </div>
+                <p>Flag content that violates our community standards</p>
+                <ul>
+                    <li>Violent or disturbing games/images</li>
+                    <li>Sexual or romantic content</li>
+                    <li>Profanity or inappropriate text</li>
+                    <li>Copyrighted material</li>
+                </ul>
+            </div>
+
+            <div class="report-type-card">
+                <div class="type-header">
+                    <div class="type-icon"><i class="fa-solid fa-bug"></i></div>
+                    <h4>Exploits & Cheating</h4>
+                </div>
+                <p>Report players using unfair advantages</p>
+                <ul>
+                    <li>Hacking or exploiting</li>
+                    <li>Using unauthorized modifications</li>
+                    <li>Account theft or phishing</li>
+                    <li>Botting or automation</li>
+                </ul>
+            </div>
+
+            <div class="report-type-card">
+                <div class="type-header">
+                    <div class="type-icon"><i class="fa-solid fa-exclamation-circle"></i></div>
+                    <h4>Safety Concerns</h4>
+                </div>
+                <p>Report serious safety or security issues</p>
+                <ul>
+                    <li>Child endangerment</li>
+                    <li>Sharing personal information</li>
+                    <li>Self-harm or suicide content</li>
+                    <li>Real-world threats</li>
+                </ul>
+            </div>
+
+            <div class="report-type-card">
+                <div class="type-header">
+                    <div class="type-icon"><i class="fa-solid fa-dollar-sign"></i></div>
+                    <h4>Scams & Fraud</h4>
+                </div>
+                <p>Report fraudulent activity or deception</p>
+                <ul>
+                    <li>Robux scams or fake giveaways</li>
+                    <li>Phishing attempts</li>
+                    <li>Fake trade offers</li>
+                    <li>Account selling schemes</li>
+                </ul>
+            </div>
+
+            <div class="report-type-card">
+                <div class="type-header">
+                    <div class="type-icon"><i class="fa-solid fa-user-secret"></i></div>
+                    <h4>Impersonation</h4>
+                </div>
+                <p>Report users pretending to be others</p>
+                <ul>
+                    <li>Impersonating Roblox staff</li>
+                    <li>Fake celebrity accounts</li>
+                    <li>Copying other users' identities</li>
+                    <li>Misleading group names</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- In-Platform Reporting -->
+        <div class="in-platform-section">
+            <h2>HOW TO REPORT IN-GAME</h2>
+            <p>The fastest way to report is directly within Roblox while the issue is happening</p>
+
+            <div class="steps-grid">
+
+                <div class="step-card">
+                    <div class="step-number-circle">1</div>
+                    <h4>Find the Report Button</h4>
+                    <p>Look for the three dots menu or flag icon next to the user, content, or chat message</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number-circle">2</div>
+                    <h4>Select Report Type</h4>
+                    <p>Choose the category that best matches the violation from the dropdown menu</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number-circle">3</div>
+                    <h4>Provide Details</h4>
+                    <p>Briefly describe what happened. Include relevant context to help moderators review</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number-circle">4</div>
+                    <h4>Submit Report</h4>
+                    <p>Click submit and you'll receive a confirmation. Our team will review it promptly</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Report Form -->
+        <div class="report-form-section">
+            <h2>SUBMIT A DETAILED REPORT</h2>
+            <p>Use this form for comprehensive reports or if you're unable to report in-game</p>
+
+            <form action="" method="POST">
+                <div class="form-grid">
+                    
+                    <div class="form-group">
+                        <label class="form-label">Your Username <span class="required">*</span></label>
+                        <input type="text" class="form-input" placeholder="Enter your Roblox username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Your Email <span class="required">*</span></label>
+                        <input type="email" class="form-input" placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Report Type <span class="required">*</span></label>
+                        <select class="form-select" required>
+                            <option value="">Select report type</option>
+                            <option value="behavior">Inappropriate Behavior</option>
+                            <option value="content">Inappropriate Content</option>
+                            <option value="exploit">Exploits & Cheating</option>
+                            <option value="safety">Safety Concerns</option>
+                            <option value="scam">Scams & Fraud</option>
+                            <option value="impersonation">Impersonation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Reported User/Content</label>
+                        <input type="text" class="form-input" placeholder="Username, game name, or content URL">
+                        <p class="form-note">If reporting a user, include their username</p>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label">Where did this occur? <span class="required">*</span></label>
+                        <select class="form-select" required>
+                            <option value="">Select location</option>
+                            <option value="game">In a game/experience</option>
+                            <option value="chat">Private chat/messages</option>
+                            <option value="group">Group/group wall</option>
+                            <option value="profile">User profile</option>
+                            <option value="catalog">Catalog/Avatar items</option>
+                            <option value="forum">Forum/community</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label">Detailed Description <span class="required">*</span></label>
+                        <textarea class="form-textarea" placeholder="Please provide as much detail as possible: What happened? When did it occur? What was said or done? Any relevant context that will help us investigate..." required></textarea>
+                        <p class="form-note">Be specific and include dates/times if possible</p>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label">Evidence (Optional)</label>
+                        <input type="file" class="form-input" multiple accept="image/*,video/*">
+                        <p class="form-note">Upload screenshots, recordings, or other evidence (Max 5 files, 10MB each)</p>
+                    </div>
+
+                </div>
+
+                <div class="urgent-checkbox">
+                    <input type="checkbox" id="urgent" name="urgent">
+                    <label for="urgent"><i class="fa-solid fa-circle-exclamation"></i> This is an urgent safety concern requiring immediate attention</label>
+                </div>
+
+                <button type="submit" class="btn-submit-report">
+                    <i class="fa-solid fa-paper-plane"></i> SUBMIT REPORT
+                </button>
+            </form>
+        </div>
+
+        <!-- What Happens Next -->
+        <div class="next-steps-section">
+            <h3>WHAT HAPPENS AFTER YOU REPORT?</h3>
+
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot">1</div>
+                    <div class="timeline-content">
+                        <h4>Report Received</h4>
+                        <p>Your report is immediately logged in our system and you'll receive a confirmation message</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">2</div>
+                    <div class="timeline-content">
+                        <h4>Review by Moderation Team</h4>
+                        <p>Our trained moderators review your report, gather evidence, and assess the violation severity</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">3</div>
+                    <div class="timeline-content">
+                        <h4>Action Taken</h4>
+                        <p>If a violation is confirmed, we take appropriate action (warning, suspension, or ban)</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">4</div>
+                    <div class="timeline-content">
+                        <h4>Follow-up (if needed)</h4>
+                        <p>For serious cases, we may contact you for additional information or to inform you of the outcome</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Safety Tips -->
+        <div class="safety-tips-banner">
+            <h3><i class="fa-solid fa-lightbulb"></i> STAY SAFE WHILE REPORTING</h3>
+            <p>Important tips to remember when dealing with problematic users or content</p>
+
+            <div class="tips-list">
+                <div class="tip-item"><strong>Block First:</strong> Block the user immediately to prevent further contact</div>
+                <div class="tip-item"><strong>Don't Engage:</strong> Avoid responding or arguing with the offender</div>
+                <div class="tip-item"><strong>Save Evidence:</strong> Take screenshots before content is deleted</div>
+                <div class="tip-item"><strong>Tell a Trusted Adult:</strong> If you're a minor, inform a parent or guardian</div>
+                <div class="tip-item"><strong>Report Promptly:</strong> Report as soon as possible while details are fresh</div>
+                <div class="tip-item"><strong>Don't Share Personal Info:</strong> Never reveal personal details to strangers</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock content %}
+
+{% block js %}
+{% endblock js %}

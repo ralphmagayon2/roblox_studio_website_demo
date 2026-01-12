@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Currency - Robux{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/robux.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="robux-wrapper">
+        <div class="robux-container">
+
+            {% comment %} Hero Section {% endcomment %}
+            <div class="robux-hero">
+                <div class="robux-icon"><i class="fa-solid fa-gem"></i></div>
+                <h1>Get Robux</h1>
+                <p>Power up your experience with Robux - the virtual currency of Roblox </p>
+            </div>
+
+            {% comment %} Pricing cards {% endcomment %}
+            <section class="pricing-section">
+                <h2 class="section-title">Choose Your Package</h2>
+                <div class="pricing-grid">
+
+                    <div class="pricing-card">
+                        <div class="robux-amount">400</div>
+                        <div class="robux-label">ROBUX</div>
+                        <div class="price">$4.99 <span class="price-currency">USD</span></div>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="robux-amount">800</div>
+                        <div class="robux-label">ROBUX</div>
+                        <div class="price">$9.99 <span class="price-currency">USD</span></div>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <span class="featured-badge">BEST VALUE</span>
+                        <div class="robux-amount">1,700</div>
+                        <div class="robux-label">ROBUX</div>
+                        <div class="price">$19.99 <span class="price-currency">USD</span></div>
+                        <div class="bonus-text">+15% Bonus</div>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="robux-amount">4,500</div>
+                        <div class="robux-label">ROBUX</div>
+                        <div class="price">$49.99 <span class="price-currency">USD</span></div>
+                        <div class="bonus-text">+20% Bonus</div>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="robux-amount">10,000</div>
+                        <div class="robux-label">ROBUX</div>
+                        <div class="price">$99.99 <span class="price-currency">USD</span></div>
+                        <div class="bonus-text">+25% Bonus</div>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="robux-amount">22,500</div>
+                        <div class="robux-label">ROBUX</div>
+                        <div class="price">$4.99 <span class="price-currency">USD</span></div>
+                        <div class="bonus-text">+30% Bonus</div>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+
+                </div>
+            </section>
+
+            {% comment %} Premium Section {% endcomment %}
+            <section class="premium-section">
+                <div class="premium-content">
+                    <span class="premium-badge"><i class="fa-solid fa-star"></i> PREMIUM</span>
+                    <h2>Roblox Premium</h2>
+                    <p>Get more value with Premium! Receive monthly Robux allowance and exclusive benefits.</p>
+                    <ul class="premium-features">
+                        <li>Monthly Robux Stipend</li>
+                        <li>10% More Robux on Purchases</li>
+                        <li>Sell Items & Earn</li>
+                        <li>Trade Items with Others</li>
+                        <li>Premium-Only Benefits</li>
+                    </ul>
+                    <button class="btn-buy" style="max-width: 250px">Join Premium</button>
+                </div>
+
+                <div class="premium-image">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+            </section>
+
+            {% comment %} Benefits {% endcomment %}
+            <section class="pricing-section">
+                <h2 class="section-title">What Can You Do with Robux?</h2>
+                <div class="benefits-grid">
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-lock"></i></div>
+                        <h3 class="benefit-title">Avatar Shop</h3>
+                        <p class="benefit-description">Customize your avatar with exclusive items, clothing, and accessories</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-gamepad"></i></div>
+                        <h3 class="benefit-title">In-Game Items</h3>
+                        <p class="benefit-description">Trade limited items with other players in the marketplace</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-gift"></i></div>
+                        <h3 class="benefit-title">Trading</h3>
+                        <p class="benefit-description">Trade limited items with other players in the market place</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h3 class="benefit-title">Game Passes</h3>
+                        <p class="benefit-description">Unlock premium features and VIP access in your favorite games</p>
+                    </div>
+                </div>
+            </section>
+
+            {% comment %} FAQ Sections {% endcomment %}
+            <section class="pricing-section">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-section">
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is Robux?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Robux is the virtual currency used in Roblox. It can be purchased with real money and used to buy in-game items, avatar accessories, and special abilities.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How do I purchase Robux?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Select a package above and click "Buy Now". You can pay with credit card, PayPal, or other supported payment methods.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can I earn Robux for free?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Yes! Premium members receive monthly Robux. Creators can also earn Robux by selling game passes, items, and through the Developer Exchange program.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is Roblox Premium?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Roblox Premium is a monthly subscription that gives you a monthly Robux allowance, 10% more Robux on purchases, and exclusive benefits like trading and selling items.
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+{% endblock content %}

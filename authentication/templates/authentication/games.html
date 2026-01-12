@@ -1,0 +1,316 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - Games{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/games.css' %}">
+{% endblock css %}
+    
+{% block content %}
+
+    <!-- Games Page Content -->
+    <div class="games-wrapper">
+        <div class="games-container">
+            
+            <!-- Hero Section -->
+            <div class="games-hero">
+                <h1><i class="fa-solid fa-gamepad"></i> Discover Amazing Games</h1>
+                <p>Explore millions of immersive experiences created by our global community!</p>
+            </div>
+
+            <!-- Search & Filters -->
+            <div class="games-filters">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Search for games...">
+                    <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+                
+                <div class="filter-group">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Popular</button>
+                    <button class="filter-btn">New</button>
+                    <button class="filter-btn">Top Rated</button>
+                    <button class="filter-btn">Featured</button>
+                </div>
+            </div>
+
+            <!-- Featured Games Section -->
+            <h2 class="section-title fire">🔥 Featured Games</h2>
+            <div class="games-grid">
+                
+                <!-- Game Card 1 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400" alt="Adventure Quest">
+                        <span class="featured-badge">⭐ Featured</span>
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Adventure Quest</h3>
+                        <p class="game-creator">by CoolDev123</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-users"></i></span>
+                                <span class="stat-value">12.5K</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-star"></i></span>
+                                <span class="stat-value">4.8</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-thumbs-up"></i></span>
+                                <span class="stat-value">95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 2 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=400" alt="Space Shooter">
+                        <span class="featured-badge">⭐ Featured</span>
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Space Shooter Ultimate</h3>
+                        <p class="game-creator">by GamerPro99</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-users"></i></span>
+                                <span class="stat-value">8.2K</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-star"></i></span>
+                                <span class="stat-value">4.6</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-thumbs-up"></i></span>
+                                <span class="stat-value">92%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 3 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400" alt="Racing Madness">
+                        <span class="featured-badge">⭐ Featured</span>
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Racing Madness</h3>
+                        <p class="game-creator">by SpeedKing</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-users"></i></span>
+                                <span class="stat-value">15.1K</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-star"></i></span>
+                                <span class="stat-value">4.9</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-thumbs-up"></i></span>
+                                <span class="stat-value">97%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 4 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?w=400" alt="Mystery Island">
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Mystery Island</h3>
+                        <p class="game-creator">by AdventureTime</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-users"></i></span>
+                                <span class="stat-value">6.8K</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-star"></i></span>
+                                <span class="stat-value">4.7</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-thumbs-up"></i></span>
+                                <span class="stat-value">93%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 5 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?w=400" alt="Battle Royale">
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Battle Royale Arena</h3>
+                        <p class="game-creator">by WarriorGuild</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-users"></i></span>
+                                <span class="stat-value">20.3K</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-star"></i></span>
+                                <span class="stat-value">4.5</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-thumbs-up"></i></span>
+                                <span class="stat-value">89%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 6 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400" alt="City Builder">
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">City Builder Deluxe</h3>
+                        <p class="game-creator">by UrbanDesign</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-users"></i></span>
+                                <span class="stat-value">9.7K</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-star"></i></span>
+                                <span class="stat-value">4.4</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-thumbs-up"></i></span>
+                                <span class="stat-value">88%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Popular Games Section -->
+            <h2 class="section-title">🎯 Popular Games</h2>
+            <div class="games-grid">
+                <!-- Add 6 more game cards similar to above -->
+                <!-- For demo purposes, I'll add placeholder cards -->
+                
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400" alt="Zombie Survival">
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Zombie Survival</h3>
+                        <p class="game-creator">by HorrorFan</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-users"></i></span>
+                                <span class="stat-value">11.2K</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-star"></i></span>
+                                <span class="stat-value">4.6</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-thumbs-up"></i></span>
+                                <span class="stat-value">91%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1556438064-2d7646166914?w=400" alt="Fantasy RPG">
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Fantasy RPG Legends</h3>
+                        <p class="game-creator">by EpicQuest</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-users"></i></span>
+                                <span class="stat-value">14.5K</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-star"></i></span>
+                                <span class="stat-value">4.8</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-thumbs-up"></i></span>
+                                <span class="stat-value">96%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=400" alt="Puzzle Master">
+                        <div class="play-overlay">
+                            <button class="play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Puzzle Master Pro</h3>
+                        <p class="game-creator">by BrainGames</p>
+                        <div class="game-stats">
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-users"></i></span>
+                                <span class="stat-value">7.9K</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-star"></i></span>
+                                <span class="stat-value">4.7</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon"><i class="fa-solid fa-thumbs-up"></i></span>
+                                <span class="stat-value">94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more">
+                <button class="btn-load-more">Load More Games</button>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}
+
+{% block js %}
+<script src="{% static 'js/games.js' %}"></script>
+{% endblock js %}

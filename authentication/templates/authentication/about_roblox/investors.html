@@ -1,0 +1,277 @@
+<!-- INVESTORS PAGE -->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - Investor Relations{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/about_roblox/investors.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+<main class="investors-wrapper">
+    
+    <!-- Hero Section -->
+    <section class="investors-hero">
+        <h1>INVESTOR RELATIONS</h1>
+        <p>Welcome to Roblox Investor Relations. Access our financial information, reports, stock data, and resources for current and prospective investors.</p>
+    </section>
+
+    <!-- Stock Information Banner -->
+    <section class="stock-banner">
+        <div class="stock-info-grid">
+            <div class="stock-item">
+                <h4>Stock Price</h4>
+                <div class="stock-value">$52.84</div>
+                <div class="stock-change positive">+$1.23 (+2.38%)</div>
+            </div>
+            <div class="stock-item">
+                <h4>Market Cap</h4>
+                <div class="stock-value">$32.5B</div>
+            </div>
+            <div class="stock-item">
+                <h4>52-Week High</h4>
+                <div class="stock-value">$58.92</div>
+            </div>
+            <div class="stock-item">
+                <h4>52-Week Low</h4>
+                <div class="stock-value">$28.15</div>
+            </div>
+        </div>
+        <div class="stock-timestamp">Last updated: December 31, 2024 at 4:00 PM EST</div>
+    </section>
+
+    <!-- Content -->
+    <section class="investors-content">
+        
+        <!-- Key Statistics -->
+        <div class="section-header">
+            <h2>KEY METRICS</h2>
+            <p>Our performance at a glance</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">300M+</div>
+                <div class="stat-label">Monthly Active Users</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">$2.8B</div>
+                <div class="stat-label">Annual Revenue</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15M+</div>
+                <div class="stat-label">Active Creators</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">190+</div>
+                <div class="stat-label">Countries & Regions</div>
+            </div>
+        </div>
+
+        <!-- Financial Reports -->
+        <div class="section-header">
+            <h2>FINANCIAL REPORTS</h2>
+            <p>Latest earnings and financial documents</p>
+        </div>
+
+        <div class="reports-grid">
+            
+            <div class="report-card">
+                <span class="report-badge">QUARTERLY</span>
+                <h3>Q3 2024 Earnings Report</h3>
+                <div class="report-date">Released: November 28, 2024</div>
+                <p>Third quarter financial results showing 32% revenue growth year-over-year with strong user engagement metrics.</p>
+                <div class="report-links">
+                    <a href="#" class="report-link"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                    <a href="#" class="report-link"><i class="fa-solid fa-chart-line"></i> Presentation</a>
+                    <a href="#" class="report-link"><i class="fa-solid fa-video"></i> Webcast</a>
+                </div>
+            </div>
+
+            <div class="report-card">
+                <span class="report-badge">QUARTERLY</span>
+                <h3>Q2 2024 Earnings Report</h3>
+                <div class="report-date">Released: August 15, 2024</div>
+                <p>Second quarter performance highlights including record engagement hours and developer monetization growth.</p>
+                <div class="report-links">
+                    <a href="#" class="report-link"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                    <a href="#" class="report-link"><i class="fa-solid fa-chart-line"></i> Presentation</a>
+                    <a href="#" class="report-link"><i class="fa-solid fa-video"></i> Webcast</a>
+                </div>
+            </div>
+
+            <div class="report-card">
+                <span class="report-badge">ANNUAL</span>
+                <h3>2023 Annual Report</h3>
+                <div class="report-date">Released: March 1, 2024</div>
+                <p>Comprehensive annual report covering full-year 2023 performance, strategy, and outlook for continued growth.</p>
+                <div class="report-links">
+                    <a href="#" class="report-link"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                    <a href="#" class="report-link"><i class="fa-solid fa-chart-line"></i> Presentation</a>
+                </div>
+            </div>
+
+            <div class="report-card">
+                <span class="report-badge">QUARTERLY</span>
+                <h3>Q1 2024 Earnings Report</h3>
+                <div class="report-date">Released: May 10, 2024</div>
+                <p>First quarter results demonstrating platform expansion and increased average revenue per user.</p>
+                <div class="report-links">
+                    <a href="#" class="report-link"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                    <a href="#" class="report-link"><i class="fa-solid fa-chart-line"></i> Presentation</a>
+                    <a href="#" class="report-link"><i class="fa-solid fa-video"></i> Webcast</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Investor Resources -->
+        <div class="section-header">
+            <h2>INVESTOR RESOURCES</h2>
+            <p>Essential tools and information for investors</p>
+        </div>
+
+        <div class="resources-grid">
+            
+            <a href="#" class="resource-item">
+                <div class="resource-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                <div class="resource-text">
+                    <h4>SEC Filings</h4>
+                    <p>Access all regulatory filings and documents</p>
+                </div>
+            </a>
+
+            <a href="#" class="resource-item">
+                <div class="resource-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="resource-text">
+                    <h4>Stock Information</h4>
+                    <p>Real-time stock data and historical charts</p>
+                </div>
+            </a>
+
+            <a href="#" class="resource-item">
+                <div class="resource-icon"><i class="fa-solid fa-users"></i></div>
+                <div class="resource-text">
+                    <h4>Corporate Governance</h4>
+                    <p>Board composition, committees, and policies</p>
+                </div>
+            </a>
+
+            <a href="#" class="resource-item">
+                <div class="resource-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                <div class="resource-text">
+                    <h4>Email Alerts</h4>
+                    <p>Subscribe to investor email notifications</p>
+                </div>
+            </a>
+
+            <a href="#" class="resource-item">
+                <div class="resource-icon"><i class="fa-solid fa-coins"></i></div>
+                <div class="resource-text">
+                    <h4>Analyst Coverage</h4>
+                    <p>List of analysts covering Roblox stock</p>
+                </div>
+            </a>
+
+            <a href="#" class="resource-item">
+                <div class="resource-icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="resource-text">
+                    <h4>Environmental & Social</h4>
+                    <p>ESG initiatives and sustainability reports</p>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Upcoming Events -->
+        <div class="events-section">
+            <h2>UPCOMING EVENTS</h2>
+
+            <div class="event-item">
+                <div class="event-header">
+                    <div class="event-info">
+                        <h3>Q4 2024 Earnings Call</h3>
+                        <div class="event-date-time">February 15, 2025 | 5:00 PM EST</div>
+                    </div>
+                    <span class="event-type">EARNINGS</span>
+                </div>
+                <p>Join us for our fourth quarter 2024 earnings call where we'll discuss financial results, key metrics, and answer investor questions.</p>
+                <div class="event-actions">
+                    <a href="#" class="btn-event"><i class="fa-solid fa-calendar-plus"></i> Add to Calendar</a>
+                    <a href="#" class="btn-event"><i class="fa-solid fa-bell"></i> Set Reminder</a>
+                </div>
+            </div>
+
+            <div class="event-item">
+                <div class="event-header">
+                    <div class="event-info">
+                        <h3>Technology & Internet Conference</h3>
+                        <div class="event-date-time">March 10, 2025 | San Francisco, CA</div>
+                    </div>
+                    <span class="event-type">CONFERENCE</span>
+                </div>
+                <p>Roblox leadership will present at the annual Technology & Internet Conference, discussing platform innovation and market opportunities.</p>
+                <div class="event-actions">
+                    <a href="#" class="btn-event"><i class="fa-solid fa-calendar-plus"></i> Add to Calendar</a>
+                    <a href="#" class="btn-event"><i class="fa-solid fa-circle-info"></i> More Details</a>
+                </div>
+            </div>
+
+            <div class="event-item">
+                <div class="event-header">
+                    <div class="event-info">
+                        <h3>Annual Shareholder Meeting</h3>
+                        <div class="event-date-time">May 20, 2025 | Virtual Event</div>
+                    </div>
+                    <span class="event-type">SHAREHOLDER</span>
+                </div>
+                <p>Our annual meeting of shareholders will be held virtually. All shareholders of record are invited to participate and vote on proposals.</p>
+                <div class="event-actions">
+                    <a href="#" class="btn-event"><i class="fa-solid fa-calendar-plus"></i> Add to Calendar</a>
+                    <a href="#" class="btn-event"><i class="fa-solid fa-user-check"></i> Register</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h3>INVESTOR CONTACT</h3>
+            <p>Our investor relations team is here to assist you with questions about our financial performance, corporate strategy, and investment opportunities.</p>
+
+            <div class="contact-cards">
+                
+                <div class="contact-card">
+                    <div class="contact-card-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h4>Investor Relations</h4>
+                    <p>General investor inquiries and information</p>
+                    <a href="mailto:ir@roblox.com">ir@roblox.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                    <h4>Phone</h4>
+                    <p>Speak with our investor relations team</p>
+                    <a href="tel:+1-888-858-2569">+1 (888) 858-2569</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h4>Mailing Address</h4>
+                    <p>Corporate headquarters</p>
+                    <a href="#">970 Park Place, San Mateo, CA 94403</a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+{% endblock content %}
+
+{% block js %}
+{% endblock js %}

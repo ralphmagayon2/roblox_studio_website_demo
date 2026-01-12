@@ -1,0 +1,108 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'img/R.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}">
+
+    <title>{% block title %}Roblox Studio - Base Template{% endblock title %}</title>
+
+    <!-- Base CSS (auth.css contains all styles) -->
+    <link rel="stylesheet" href="{% static 'css/auth.css' %}">
+
+    {% block css %}
+    
+    {% endblock css %}
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="animated-background" id="bgContainer"></div>
+    <div class="main-rotating-square"></div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="{% url 'authentication:join' %}" class="nav-logo">
+                <div class="nav-logo-icon">R</div>
+                <span class="nav-logo-text">ROBLOX</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="{% url 'authentication:games' %}" class="{% if request.resolver_match.url_name == 'games' %}active{% endif %}">Games</a></li>
+                <li><a href="{% url 'authentication:create' %}" class="{% if request.resolver_match.url_name == 'create' %}active{% endif %}">Create</a></li>
+                <li><a href="{% url 'authentication:robux' %}" class="{% if request.resolver_match.url_name == 'robux' %}active{% endif %}">Robux</a></li>
+                <li><a href="{% url 'authentication:support' %}" class="{% if request.resolver_match.url_name == 'support' %}active{% endif %}">Support</a></li>
+                <li><a href="{% url 'authentication:join' %}" class="join-btn">Join</a></li>
+            </ul>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    {% comment %} Content goes here {% endcomment %}
+    {% block content %}
+    
+    {% endblock content %}
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Roblox</h3>
+                <ul>
+                    <li><a href="{% url 'authentication:about' %}">About Us</a></li>
+                    <li><a href="{% url 'authentication:career' %}">Carrers</a></li>
+                    <li><a href="{% url 'authentication:press' %}">Press</a></li>
+                    <li><a href="{% url 'authentication:investors' %}">Inverstors</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="{% url 'authentication:customer_support' %}">Customer Support</a></li>
+                    <li><a href="{% url 'authentication:safety_center' %}">Safety</a></li>
+                    <li><a href="{% url 'authentication:community_standards' %}">Community Standards</a></li>
+                    <li><a href="{% url 'authentication:report_abuse' %}">Report Abuse</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="{% url 'authentication:developer_hub' %}">Developer Hub</a></li>
+                    <li><a href="{% url 'authentication:education' %}">Education</a></li>
+                    <li><a href="{% url 'authentication:blog' %}">Blog</a></li>
+                    <li><a href="{% url 'authentication:community' %}">Community</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="{% url 'authentication:term_of_use' %}">Terms of Use</a></li>
+                    <li><a href="{% url 'authentication:privacy_policy' %}">Privacy Policy</a></li>
+                    <li><a href="{% url 'authentication:cookie_policy' %}">Cookie Policy</a></li>
+                    <li><a href="{% url 'authentication:license' %}">Licenses</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Roblox corporation. All rights reserved. This is a demo project by Ralph Joseph.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/auth.js' %}"></script>
+
+    {% comment %} Additional JS per page {% endcomment %}
+    {% block js %}
+    
+    {% endblock js %}
+    
+</body>
+</html>

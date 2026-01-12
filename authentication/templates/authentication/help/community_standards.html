@@ -1,0 +1,242 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studion - Community Standards{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/help/community_standards.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="standards-wrapper">
+        <div class="standards-container">
+
+            {% comment %} Hero section {% endcomment %}
+            <div class="standards-hero">
+                <h1>COMMUNITY STANDARDS</h1>
+                <p>Our community standards ensure Roblox remains a safe, welcoming, and civil environment for everyone. These guidelines apply to all users, content, and behavior on the platform.</p>
+                <span class="last-updated"><i class="fa-solid fa-calendar-check"></i> Last Updated: January 03, 2025</span>
+            </div>
+
+            {% comment %} Introduction {% endcomment %}
+            <div class="intro-section">
+                <h2>OUR MISSION</h2>
+                <p>Roblox's mission is to bring the world together though play. We envision a world where anyone can come together to create, share experiences, and express themselves in a safe and civil environement.</p>
+                <p>These Community Standards outline what and isn't allowed on Roblox. By using our platform, you agree to follow these standards. Violations may result in moderation action including warnings, temporary suspensions, or permanent bans.</p>
+            </div>
+
+            {% comment %} Table of Content {% endcomment %}
+            <div class="toc-section">
+                <h3><i class="fa-solid fa-list"></i> Quick Navigation</h3>
+                <ul class="toc-list">
+                    <li><a href="#safety"> Safety & Security</a></li>
+                    <li><a href="#civility"> Civility & Respect</a></li>
+                    <li><a href="#integrity"> Integrity & Authentication</a></li>
+                    <li><a href="#content"> Content Standards</a></li>
+                    <li><a href="#consequences"> Consequences</a></li>
+                    <li><a href="#appeal"> Appeal Process</a></li>
+                </ul>
+            </div>
+
+            {% comment %} Standards Section {% endcomment %}
+            <div class="standards-section" id="safety">
+
+                <div class="standard-item">
+                    <div class="standard-header">
+                        <div class="standard-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>Safety & Security</h3>
+                    </div>
+                    <p>We have zero tolerance for content or behavior that theatens real-world safety or security, including threats of violence, self-harm, exploitation, and illegal activites.</p>
+
+                    <h4>Prohibited:</h4>
+                    <ul>
+                        <li>Threats of violence or harm toward others</li>
+                        <li>Sharing personal information (doxxing)</li>
+                        <li>Content promoting self-harm or suicide</li>
+                        <li>Child endangerment or exploitation</li>
+                        <li>Terrorism or violent extremism</li>
+                        <li>Illegal activities or substances</li>
+                    </ul>
+
+                    <div class="violation-levels">
+                        <div class="violation-badge severe">SEVERE VIOLATION</div>
+                        <div class="violation-badge severe">IMMEDIATE BAN</div>
+                        <div class="violation-badge severe">LAW ENFORCEMENT REPORT</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="standards-section" id="civility">
+
+                <div class="standard-item">
+                    <div class="standard-header">
+                        <div class="standard-icon"><i class="fa-solid fa-heart"></i></div>
+                        <h3>Civility & Respect</h3>
+                    </div>
+                    <p>Roblox is a diverse community. We expect all users treat each other with respect and kindness, regardless of difference in identity, biliefs, or opinions.</p>
+
+                    <h4>Prohibited:</h4>
+                    <ul>
+                        <li>Bullying, harassment, or targeted attacks</li>
+                        <li>Hate speech or discrimination based on race, ethnicity, religion, gender, sexual orientation, or disability</li>
+                        <li>Sexual harassment or inappropriate advances</li>
+                        <li>Impersonation or identity theft</li>
+                        <li>Spam, scams, or phishing attempts</li>
+                    </ul>
+
+                    <div class="violation-levels">
+                        <div class="violation-badge moderate">MODERATE TO SEVERE</div>
+                        <div class="violation-badge moderate">SUSPENSION LIKELY</div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="standards-section" id="integrity">
+
+                <div class="standard-item">
+                    <div class="standard-header">
+                        <div class="standard-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <h3>Integrity & Authenticity</h3>
+                    </div>
+                    <p>We value honest and authentic interactions. Deceptive practices, cheating, and exploiting undermine the community experiences.</p>
+
+                    <h4>Prohibited:</h4>
+                    <ul>
+                        <li>Cheating, exploiting, or using unauthorized modifications</li>
+                        <li>Account theft or unauthorized access</li>
+                        <li>Selling or trading accounts</li>
+                        <li>False reporting or abuse of moderation systems</li>
+                        <li>Manipulating engagement or economy (botting, fake likes)</li>
+                        <li>Intellectual property violations</li>
+                    </ul>
+
+                    <div class="violation-levels">
+                        <div class="violation-badge moderate">MODERATE VIOLATIONS</div>
+                        <div class="violation-badge moderate">ACCOUNT SUSPENSION</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="standards-section" id="content">
+
+                <div class="standard-item">
+                    <div class="standard-header">
+                        <div class="standard-icon"><i class="fa-solid fa-image"></i></div>
+                        <h3>Content Standards</h3>
+                    </div>
+                    <p>All content in Roblox-including games, avatars, audio, and text-must comply with our standards and be appreciate for our diverse community.</p>
+
+                    <h4>Prohibited:</h4>
+                        <ul>
+                        <li>Sexual or romantic content</li>
+                        <li>Violent or gory content</li>
+                        <li>Profanity and vulgar language</li>
+                        <li>Political content intended to influence real-world elections</li>
+                        <li>Gambling with real money or Robux</li>
+                        <li>Advertising external services or off-platform transactions</li>
+                        <li>Misleading or clickbait content</li>
+                    </ul>
+
+                    <div class="violation-levels">
+                        <div class="violation-badge minor">MINOR TO MODERATE</div>
+                        <div class="violation-badge minor">WARNING OR REMOVAL</div>
+                    </div>
+                </div>
+
+            </div>
+
+            {% comment %} Consequences Section {% endcomment %}
+            <div class="consequences-section" id="consequences">
+                <h2><i class="fa-solid fa-gavel"></i> ENFORCEMENT & CONSEQUENCES</h2>
+                <p>Violations of our Community Standards result in moderation actions. The severity and frequency of violations determine by the consequences.</p>
+                
+                <div class="consequences-grid">
+                    
+                    <div class="consequence-card">
+                        <h4>Warning</h4>
+                        <p>First-time minor violations typically receive a warning. The offending content is removed, and user is notified.</p>
+                    </div>
+
+                    <div class="consequence-card">
+                        <h4>Temporary Suspensions</h4>
+                        <p>Moderate Violations or repeated minor violations result in temporary account suspension (1-4 days).</p>
+                    </div>
+
+                    <div class="consequence-card">
+                        <h4>Account Deletion</h4>
+                        <p>Severe violations or repeated suspensions lead to permanent account termination with no possiblity of recovery.</p>
+                    </div>
+
+                    <div class="consequence-card">
+                        <h4>IP/Device Ban</h4>
+                        <p>Extremely Severy violations may result in device or IP-Level bans, preventing creation of new accounts.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            {% comment %} Appeal Process {% endcomment %}
+            <div class="appeal-section" id="appeal">
+                <h2><i class="fa-solid fa-balance-scale"></i> APPEAL PROCESS</h2>
+                <p>If you believe a moderation action was made in error, you have the right to appeal. All appeals are reviewed by our moderation team.</p>
+
+                <div class="appeal-steps">
+
+                    <div class="appeal-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Review the Violation</h4>
+                            <p>Check your email for detail about moderation action, including which content or behavior violated our standards.</p>
+                        </div>
+                    </div>
+
+                    <div class="appeal-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Submit an Appeal</h4>
+                            <p>Visit our Support page and submit an appeal within 30 days of the moderation action. Provide any relevant context or evidences.</p>
+                        </div>
+                    </div>
+
+                    <div class="appeal-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Review Process</h4>
+                            <p>Our moderation team will review your proposal within 7-14 business days. You'll receive an email with the decision</p>
+                        </div>
+                    </div>
+
+                    <div class="appeal-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Final Decision</h4>
+                            <p>Appeal decisions are final. If your appeal is denied, the original moderation action standards. If approved, any penalties are reversed.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            {% comment %} CTA Section {% endcomment %}
+            <div class="cta-section">
+                <h2>HELP US BUILD A BETTER COMMUNITY</h2>
+                <p>Everyone plays a role in maintaining Roblox's safety and civility. If you see content or behavior that violates our standards, please report it immediately.</p>
+
+                <div class="cta-buttons">
+                    <a href="" class="btn-cta btn-primary-cta">
+                        <i class="fa-solid fa-flag"></i> Report a Violation
+                    </a>
+                    <a href="" class="btn-cta btn-secondary-cta">
+                        <i class="fa-solid fa-book"></i> Read Full Policy
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+{% endblock content %}

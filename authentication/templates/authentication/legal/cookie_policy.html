@@ -1,0 +1,377 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - Cookie Policy{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/legal/cookie_policy.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="cookie-wrapper">
+        <div class="cookie-container">
+
+            <!-- Hero Section -->
+            <div class="cookie-hero">
+                <h1>COOKIE POLICY</h1>
+                <p>This Cookie Policy explains how Roblox uses cookies and similar tracking technologies when you visit our website and use our services.</p>
+                <span class="last-updated"><i class="fa-solid fa-cookie-bite"></i> Last Updated: January 1, 2025</span>
+            </div>
+
+            <!-- Wrap TOC and Main Content together -->
+            <div class="content-layout">
+
+                <!-- Left Sidebar - Table of Contents -->
+                <div class="toc-section">
+                    <h3><i class="fa-solid fa-list"></i> Quick Navigation</h3>
+                    <ul class="toc-list">
+                        <li><a href="#what">1. What Are Cookies?</a></li>
+                        <li><a href="#types">2. Types of Cookies</a></li>
+                        <li><a href="#use">3. How We Use Cookies</a></li>
+                        <li><a href="#third-party">4. Third-Party Cookies</a></li>
+                        <li><a href="#manage">5. Managing Cookies</a></li>
+                        <li><a href="#changes">6. Changes to Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Side - Main Content -->
+                <div class="main-content-wrapper">
+
+                    <button class="print-button" onclick="window.print()"><i class="fa-solid fa-print"></i> Print Policy</button>
+
+                    <!-- Cookie Content -->
+                    <div class="cookie-content">
+
+                        <!-- Section 1 -->
+                        <div class="cookie-section" id="what">
+                            <h2>1. What Are Cookies?</h2>
+                            
+                            <p>Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and provide information to the website owners.</p>
+
+                            <div class="info-box">
+                                <p><strong>Purpose:</strong> Cookies help us understand how you use our services, remember your preferences, keep you logged in, and improve your overall experience on Roblox.</p>
+                            </div>
+
+                            <h3>Similar Technologies</h3>
+                            <p>In addition to cookies, we use similar technologies including:</p>
+                            <ul>
+                                <li><strong>Web Beacons (Pixels):</strong> Small graphic images embedded in web pages or emails that track user activity</li>
+                                <li><strong>Local Storage:</strong> Technology that allows websites to store data locally in your browser</li>
+                                <li><strong>Session Storage:</strong> Temporary storage that expires when you close your browser</li>
+                                <li><strong>SDKs:</strong> Software development kits in mobile apps that collect usage data</li>
+                            </ul>
+
+                            <p>For simplicity, we refer to all these technologies as "cookies" in this policy.</p>
+                        </div>
+
+                        <!-- Section 2 -->
+                        <div class="cookie-section" id="types">
+                            <h2>2. Types of Cookies We Use</h2>
+
+                            <p>We use different types of cookies to provide and improve our services. Below is a detailed breakdown:</p>
+
+                            <div class="cookie-types-grid">
+
+                                <div class="cookie-type-card">
+                                    <div class="cookie-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                    <h4>Essential Cookies</h4>
+                                    <span class="cookie-badge">REQUIRED</span>
+                                    <p>These cookies are necessary for the website to function properly. They enable core functionality such as security, network management, and accessibility.</p>
+                                    <p><strong>Examples:</strong> Login authentication, security tokens, session management</p>
+                                </div>
+
+                                <div class="cookie-type-card">
+                                    <div class="cookie-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                    <h4>Performance Cookies</h4>
+                                    <span class="cookie-badge">OPTIONAL</span>
+                                    <p>These cookies collect information about how you use our website, helping us understand which features are most popular and identify areas for improvement.</p>
+                                    <p><strong>Examples:</strong> Page load times, error tracking, usage analytics</p>
+                                </div>
+
+                                <div class="cookie-type-card">
+                                    <div class="cookie-icon"><i class="fa-solid fa-sliders"></i></div>
+                                    <h4>Functional Cookies</h4>
+                                    <span class="cookie-badge">OPTIONAL</span>
+                                    <p>These cookies remember your choices and preferences to provide enhanced, personalized features and content.</p>
+                                    <p><strong>Examples:</strong> Language preferences, theme settings, remembered username</p>
+                                </div>
+
+                                <div class="cookie-type-card">
+                                    <div class="cookie-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                                    <h4>Advertising Cookies</h4>
+                                    <span class="cookie-badge">OPTIONAL</span>
+                                    <p>These cookies are used to deliver relevant advertisements and track the effectiveness of advertising campaigns.</p>
+                                    <p><strong>Examples:</strong> Ad targeting, conversion tracking, remarketing</p>
+                                </div>
+
+                            </div>
+
+                            <h3>Detailed Cookie List</h3>
+                            <table class="cookie-table">
+                                <thead>
+                                    <tr>
+                                        <th>Cookie Name</th>
+                                        <th>Type</th>
+                                        <th>Purpose</th>
+                                        <th>Duration</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>_rbx_session</td>
+                                        <td>Essential</td>
+                                        <td>Maintains user session and login state</td>
+                                        <td>Session</td>
+                                    </tr>
+                                    <tr>
+                                        <td>_rbx_csrf</td>
+                                        <td>Essential</td>
+                                        <td>Protects against cross-site request forgery attacks</td>
+                                        <td>Session</td>
+                                    </tr>
+                                    <tr>
+                                        <td>_rbx_analytics</td>
+                                        <td>Performance</td>
+                                        <td>Tracks usage patterns and page performance</td>
+                                        <td>2 years</td>
+                                    </tr>
+                                    <tr>
+                                        <td>_rbx_preferences</td>
+                                        <td>Functional</td>
+                                        <td>Stores user preferences and settings</td>
+                                        <td>1 year</td>
+                                    </tr>
+                                    <tr>
+                                        <td>_rbx_ads</td>
+                                        <td>Advertising</td>
+                                        <td>Delivers relevant advertisements</td>
+                                        <td>90 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td>_ga</td>
+                                        <td>Performance</td>
+                                        <td>Google Analytics - tracks visitors</td>
+                                        <td>2 years</td>
+                                    </tr>
+                                    <tr>
+                                        <td>_gid</td>
+                                        <td>Performance</td>
+                                        <td>Google Analytics - distinguishes users</td>
+                                        <td>24 hours</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Section 3 -->
+                        <div class="cookie-section" id="use">
+                            <h2>3. How We Use Cookies</h2>
+
+                            <h3>3.1 Authentication & Security</h3>
+                            <p>We use cookies to:</p>
+                            <ul>
+                                <li>Authenticate your identity and keep you logged in</li>
+                                <li>Protect your account from unauthorized access</li>
+                                <li>Prevent fraudulent activity and abuse</li>
+                                <li>Implement security features and measures</li>
+                            </ul>
+
+                            <h3>3.2 Performance & Analytics</h3>
+                            <p>We use cookies to:</p>
+                            <ul>
+                                <li>Analyze how users interact with our services</li>
+                                <li>Measure website traffic and usage patterns</li>
+                                <li>Identify and fix technical issues</li>
+                                <li>Test new features and improvements</li>
+                                <li>Generate aggregate statistics about our users</li>
+                            </ul>
+
+                            <h3>3.3 Personalization</h3>
+                            <p>We use cookies to:</p>
+                            <ul>
+                                <li>Remember your language and region preferences</li>
+                                <li>Save your display and accessibility settings</li>
+                                <li>Customize content based on your interests</li>
+                                <li>Provide personalized game recommendations</li>
+                                <li>Remember items in your shopping cart</li>
+                            </ul>
+
+                            <h3>3.4 Advertising</h3>
+                            <p>We use cookies to:</p>
+                            <ul>
+                                <li>Show relevant advertisements based on your interests</li>
+                                <li>Measure the effectiveness of ad campaigns</li>
+                                <li>Control the frequency of ads you see</li>
+                                <li>Track conversions and user engagement</li>
+                            </ul>
+
+                            <div class="warning-box">
+                                <p><strong>Note:</strong> You can opt out of advertising cookies at any time through your cookie preferences. However, this may result in less relevant advertisements.</p>
+                            </div>
+                        </div>
+
+                        <!-- Section 4 -->
+                        <div class="cookie-section" id="third-party">
+                            <h2>4. Third-Party Cookies</h2>
+
+                            <p>In addition to our own cookies, we allow certain trusted third parties to place cookies on your device to help us provide and improve our services.</p>
+
+                            <h3>Third-Party Services We Use</h3>
+
+                            <h4>Analytics Providers</h4>
+                            <ul>
+                                <li><strong>Google Analytics:</strong> Provides insights into website traffic and user behavior</li>
+                                <li><strong>Mixpanel:</strong> Tracks user interactions and engagement patterns</li>
+                                <li><strong>Amplitude:</strong> Analyzes product usage and user journeys</li>
+                            </ul>
+
+                            <h4>Advertising Networks</h4>
+                            <ul>
+                                <li><strong>Google Ads:</strong> Delivers targeted advertisements</li>
+                                <li><strong>Facebook Pixel:</strong> Tracks conversions and enables retargeting</li>
+                                <li><strong>Twitter Ads:</strong> Measures ad campaign performance</li>
+                            </ul>
+
+                            <h4>Social Media Plugins</h4>
+                            <ul>
+                                <li><strong>Facebook:</strong> Enables social sharing features</li>
+                                <li><strong>Twitter:</strong> Allows content sharing on Twitter</li>
+                                <li><strong>YouTube:</strong> Embeds videos and tracks views</li>
+                            </ul>
+
+                            <h4>Support & Communication</h4>
+                            <ul>
+                                <li><strong>Zendesk:</strong> Provides customer support chat functionality</li>
+                                <li><strong>Intercom:</strong> Enables in-app messaging and support</li>
+                            </ul>
+
+                            <div class="info-box">
+                                <p><strong>Third-Party Policies:</strong> These third parties have their own privacy policies and cookie policies. We recommend reviewing them to understand how they collect and use your data.</p>
+                            </div>
+                        </div>
+
+                        <!-- Section 5 -->
+                        <div class="cookie-section" id="manage">
+                            <h2>5. Managing Your Cookie Preferences</h2>
+
+                            <p>You have several options for managing and controlling cookies on your device:</p>
+
+                            <h3>5.1 Browser Settings</h3>
+                            <p>Most web browsers allow you to control cookies through their settings. You can:</p>
+                            <ul>
+                                <li>Block all cookies</li>
+                                <li>Block only third-party cookies</li>
+                                <li>Delete cookies after each browsing session</li>
+                                <li>Receive notifications when cookies are set</li>
+                            </ul>
+
+                            <p><strong>Browser Cookie Settings:</strong></p>
+                            <ul>
+                                <li><strong>Chrome:</strong> Settings > Privacy and Security > Cookies and other site data</li>
+                                <li><strong>Firefox:</strong> Options > Privacy & Security > Cookies and Site Data</li>
+                                <li><strong>Safari:</strong> Preferences > Privacy > Cookies and website data</li>
+                                <li><strong>Edge:</strong> Settings > Cookies and site permissions > Cookies and site data</li>
+                            </ul>
+
+                            <h3>5.2 Opt-Out Tools</h3>
+                            <p>You can opt out of certain types of tracking:</p>
+                            <ul>
+                                <li><strong>Google Analytics:</strong> <a href="https://tools.google.com/dlpage/gaoptout" style="color: #ff6f3c;">Google Analytics Opt-out Browser Add-on</a></li>
+                                <li><strong>Interest-Based Ads:</strong> <a href="http://www.aboutads.info/choices/" style="color: #ff6f3c;">Digital Advertising Alliance</a></li>
+                                <li><strong>Network Advertising:</strong> <a href="http://www.networkadvertising.org/choices/" style="color: #ff6f3c;">Network Advertising Initiative</a></li>
+                            </ul>
+
+                            <h3>5.3 Mobile Device Settings</h3>
+                            <p>For mobile devices, you can manage tracking through:</p>
+                            <ul>
+                                <li><strong>iOS:</strong> Settings > Privacy > Tracking > Limit Ad Tracking</li>
+                                <li><strong>Android:</strong> Settings > Google > Ads > Opt out of Ads Personalization</li>
+                            </ul>
+
+                            <div class="warning-box">
+                                <p><strong>Important:</strong> Blocking or deleting essential cookies may prevent you from using certain features of our services, including logging in and accessing your account.</p>
+                            </div>
+                        </div>
+
+                        <!-- Section 6 -->
+                        <div class="cookie-section" id="changes">
+                            <h2>6. Changes to This Cookie Policy</h2>
+
+                            <p>We may update this Cookie Policy from time to time to reflect changes in our practices, technology, or legal requirements.</p>
+
+                            <h3>How We Notify You</h3>
+                            <p>When we make significant changes to this policy, we will:</p>
+                            <ul>
+                                <li>Update the "Last Updated" date at the top of this page</li>
+                                <li>Post a notice on our website</li>
+                                <li>Send an email notification to registered users</li>
+                                <li>Display a cookie consent banner with updated preferences</li>
+                            </ul>
+
+                            <p>We encourage you to review this Cookie Policy periodically to stay informed about how we use cookies.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Cookie Settings -->
+                    <div class="cookie-settings">
+                        <h3><i class="fa-solid fa-sliders"></i> YOUR COOKIE PREFERENCES</h3>
+                        <p>Customize your cookie settings below. Essential cookies cannot be disabled as they are necessary for the website to function.</p>
+
+                        <div class="settings-options">
+
+                            <div class="setting-option">
+                                <div class="setting-info">
+                                    <h4>Essential Cookies</h4>
+                                    <p>Required for basic functionality</p>
+                                </div>
+                                <div class="toggle-switch active" style="cursor: not-allowed; opacity: 0.6;"></div>
+                            </div>
+
+                            <div class="setting-option">
+                                <div class="setting-info">
+                                    <h4>Performance Cookies</h4>
+                                    <p>Help us improve the website</p>
+                                </div>
+                                <div class="toggle-switch active" onclick="this.classList.toggle('active')"></div>
+                            </div>
+
+                            <div class="setting-option">
+                                <div class="setting-info">
+                                    <h4>Functional Cookies</h4>
+                                    <p>Remember your preferences</p>
+                                </div>
+                                <div class="toggle-switch active" onclick="this.classList.toggle('active')"></div>
+                            </div>
+
+                            <div class="setting-option">
+                                <div class="setting-info">
+                                    <h4>Advertising Cookies</h4>
+                                    <p>Show relevant advertisements</p>
+                                </div>
+                                <div class="toggle-switch" onclick="this.classList.toggle('active')"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Contact Section -->
+                    <div class="contact-cookie">
+                        <h3><i class="fa-solid fa-cookie-bite"></i> QUESTIONS ABOUT COOKIES?</h3>
+                        <p>If you have any questions about our use of cookies or this Cookie Policy, please don't hesitate to contact us.</p>
+                        <a href="#" class="btn-contact">Contact Us</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}
+
+{% block js %}
+    <script src="{% static 'js/legal/cookie.js' %}"></script>
+{% endblock js %}

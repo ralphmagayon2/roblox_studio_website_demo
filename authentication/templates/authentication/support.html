@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Help Center - Support{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/support.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="support-wrapper">
+        <div class="support-container">
+
+            {% comment %} Hero with Search {% endcomment %}
+            <div class="support-hero">
+                <h1>HOW CAN WE HELP?</h1>
+                <p>Seach our knowledge base or browse by category.</p>
+
+                <div class="search-container">
+                    <input type="text" class="search-box" placeholder="Search for help articles, guides, and FAQs...">
+                    <button class="search-btn">Search</button>
+                </div>
+
+                <div class="quick-links">
+                    <a href="#" class="quick-link">Account Issues</a>
+                    <a href="#" class="quick-link">Password Reset</a>
+                    <a href="#" class="quick-link">Billing</a>
+                    <a href="#" class="quick-link">Report Bug</a>
+                    <a href="#" class="quick-link">Safety</a>
+                </div>
+            </div>
+
+            {% comment %} Status {% endcomment %}
+            <div class="status-section">
+                <div class="status-info">
+                    <div class="status-indicator">✓</div>
+                    <div class="status-text">
+                        <h3>All System Operational</h3>
+                        <p>Last checked: 2 minutes ago</p>
+                    </div>
+                </div>
+                <a href="#" class="status-link">View Status Page →</a>
+            </div>
+
+            {% comment %} Categories {% endcomment %}
+            <section style="margin-top: 80px;">
+                <h2 class="section-title">Browse by Category</h2>
+                <div class="categories-grid">
+
+                    <div class="category-card">
+                        <div class="category-icon"><i class="fa-solid fa-lock"></i></div>
+                        <h3 class="category-title">Account & Security</h3>
+                        <p class="category-description">Password resets, 2FA, account recovery, and security settings</p>
+                        <a href="" class="category-link">View Articles →</a>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon"><i class="fa-solid fa-credit-card"></i></div>
+                        <h3 class="category-title">Billing & Payments</h3>
+                        <p class="category-description">Purchases, refunds, payment methods, and Premium subscriptions</p>
+                        <a href="" class="category-link">View Articles →</a>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon"><i class="fa-solid fa-shield"></i></div>
+                        <h3 class="category-title">Safety & Moderation</h3>
+                        <p class="category-description">Report abuse, parental controls, and community guidelines</p>
+                        <a href="" class="category-link">View Articles →</a>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon"><i class="fa-solid fa-gamepad"></i></div>
+                        <h3 class="category-title">Gameplay Issues</h3>
+                        <p class="category-description">Technical problems, lag, crashes, and performance issues</p>
+                        <a href="" class="category-link">View Articles →</a>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon"><i class="fa-solid fa-gem"></i></div>
+                        <h3 class="category-title">Robux & Items</h3>
+                        <p class="category-description">Purchasing Robux, trading items, and virtual goods</p>
+                        <a href="" class="category-link">View Articles →</a>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3 class="category-title">Studio & Development</h3>
+                        <p class="category-description">Buidling games, scripting, publishing, and monetization</p>
+                        <a href="" class="category-link">View Articles →</a>
+                    </div>
+
+                </div>
+            </section>
+
+            {% comment %} Popular Articles {% endcomment %}
+            <section class="articles-section">
+                <h2 class="section-title">Popular Help Articles</h2>
+
+                <div class="article-item">
+                    <div class="article-icon"><i class="fa-solid fa-lock"></i></div>
+                    <div class="article-content">
+                        <h3 class="article-title">How to Reset Your Password</h3>
+                        <p class="article-description">Step-by-step guide to recover your account</p>
+                    </div>
+                    <div class="article-arrow">→</div>
+                </div>
+
+                <div class="article-item">
+                    <div class="article-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+                    <div class="article-content">
+                        <h3 class="article-title">Purchasing Robux Safely</h3>
+                        <p class="article-description">Learn about secure payment methods</p>
+                    </div>
+                    <div class="article-arrow">→</div>
+                </div>
+
+                <div class="article-item">
+                    <div class="article-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="article-content">
+                        <h3 class="article-title">Parental Control Guidelines</h3>
+                        <p class="article-description">Keep your kids safe on Roblox</p>
+                    </div>
+                    <div class="article-arrow">→</div>
+                </div>
+
+                <div class="article-item">
+                    <div class="article-icon"><i class="fa-solid fa-ban"></i></div>
+                    <div class="article-content">
+                        <h3 class="article-title">How to Report a Player</h3>
+                        <p class="article-description">Report innapropriate behavior or content</p>
+                    </div>
+                    <div class="article-arrow">→</div>
+                </div>
+
+                <div class="article-item">
+                    <div class="article-icon"><i class="fa-solid fa-mobile"></i></div>
+                    <div class="article-content">
+                        <h3 class="article-title">Mobile App Troubleshooting</h3>
+                        <p class="article-description">Fix common issues on IOS and Android</p>
+                    </div>
+                    <div class="article-arrow">→</div>
+                </div>
+
+            </section>
+
+            {% comment %} Contact Section {% endcomment %}
+            <div class="contact-section">
+                <h2>Still Need Help?</h2>
+                <p>Our support team is here to assist you</p>
+
+                <div class="contact-methods">
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-message"></i></div>
+                        <h3 class="contact-title">Live Chat</h3>
+                        <p class="contact-description">Char with our support team in real-time</p>
+                        <a href="" class="contact-btn">Start Chat</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <h3 class="contact-title">Email Support</h3>
+                        <p class="contact-description">Get a response within 24-48 hours</p>
+                        <a href="" class="contact-btn">Send Email</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-ticket"></i></div>
+                        <h3 class="contact-title">Submit Ticket</h3>
+                        <p class="contact-description">Create a detailed support request</p>
+                        <a href="" class="contact-btn">Create Ticket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

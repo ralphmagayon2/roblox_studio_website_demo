@@ -1,0 +1,328 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - Community{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/resources/community.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="community-wrapper">
+        <div class="community-container">
+
+            <!-- Hero Section -->
+            <div class="community-hero">
+                <h1>ROBLOX COMMUNITY</h1>
+                <p>Join millions of creators, players, and developers from around the world. Connect, collaborate, and be part of something amazing.</p>
+            </div>
+
+            <!-- Stats Banner -->
+            <div class="stats-banner">
+
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="stat-number">300M+</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-globe"></i></div>
+                    <div class="stat-number">190+</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-gamepad"></i></div>
+                    <div class="stat-number">15M+</div>
+                    <div class="stat-label">Experiences</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="stat-number">12M+</div>
+                    <div class="stat-label">Creators</div>
+                </div>
+
+            </div>
+
+            <!-- Community Channels -->
+            <div class="channels-section">
+                <h2 class="section-title">JOIN THE CONVERSATION</h2>
+                <p class="section-subtitle">Connect with the Roblox community across multiple platforms</p>
+
+                <div class="channels-grid">
+
+                    <div class="channel-card">
+                        <div class="channel-icon"><i class="fa-brands fa-discord"></i></div>
+                        <h3>Discord Server</h3>
+                        <p>Chat with developers, get help with your projects, and participate in community events</p>
+                        <p class="channel-members"><i class="fa-solid fa-user"></i> 500K+ members</p>
+                        <a href="#" class="btn-join">Join Server</a>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon"><i class="fa-solid fa-comments"></i></div>
+                        <h3>Developer Forum</h3>
+                        <p>Ask questions, share knowledge, and discuss development topics with experts</p>
+                        <p class="channel-members"><i class="fa-solid fa-message"></i> 2M+ posts</p>
+                        <a href="#" class="btn-join">Visit Forum</a>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon"><i class="fa-brands fa-youtube"></i></div>
+                        <h3>YouTube Channel</h3>
+                        <p>Watch tutorials, updates, creator spotlights, and behind-the-scenes content</p>
+                        <p class="channel-members"><i class="fa-solid fa-play"></i> 5M+ subscribers</p>
+                        <a href="#" class="btn-join">Subscribe</a>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon"><i class="fa-brands fa-twitter"></i></div>
+                        <h3>Twitter/X</h3>
+                        <p>Stay updated with real-time news, announcements, and community highlights</p>
+                        <p class="channel-members"><i class="fa-solid fa-users"></i> 3M+ followers</p>
+                        <a href="#" class="btn-join">Follow Us</a>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon"><i class="fa-brands fa-reddit"></i></div>
+                        <h3>Reddit Community</h3>
+                        <p>Share creations, memes, discussions, and connect with fellow Roblox fans</p>
+                        <p class="channel-members"><i class="fa-solid fa-user"></i> 1.5M+ members</p>
+                        <a href="#" class="btn-join">Join Subreddit</a>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon"><i class="fa-brands fa-twitch"></i></div>
+                        <h3>Twitch Streams</h3>
+                        <p>Watch live streams, developer sessions, and community gameplay events</p>
+                        <p class="channel-members"><i class="fa-solid fa-video"></i> Live daily</p>
+                        <a href="#" class="btn-join">Watch Live</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Featured Communities -->
+            <div class="featured-communities">
+                <h2>FEATURED COMMUNITIES</h2>
+
+                <div class="communities-grid">
+
+                    <div class="community-card">
+                        <div class="community-header">
+                            <div class="community-avatar">D</div>
+                            <div class="community-info">
+                                <h4>Developers United</h4>
+                                <span class="community-type">Development</span>
+                            </div>
+                        </div>
+                        <p>A thriving community of game developers sharing code, assets, and best practices</p>
+                        <div class="community-stats">
+                            <span><i class="fa-solid fa-users"></i> 85K members</span>
+                            <span><i class="fa-solid fa-comment"></i> Active daily</span>
+                        </div>
+                        <a href="#" class="btn-view-community">View Community</a>
+                    </div>
+
+                    <div class="community-card">
+                        <div class="community-header">
+                            <div class="community-avatar">B</div>
+                            <div class="community-info">
+                                <h4>Builders Hub</h4>
+                                <span class="community-type">Building & Design</span>
+                            </div>
+                        </div>
+                        <p>Master builders showcase their creations and help others improve their building skills</p>
+                        <div class="community-stats">
+                            <span><i class="fa-solid fa-users"></i> 62K members</span>
+                            <span><i class="fa-solid fa-comment"></i> Very active</span>
+                        </div>
+                        <a href="#" class="btn-view-community">View Community</a>
+                    </div>
+
+                    <div class="community-card">
+                        <div class="community-header">
+                            <div class="community-avatar">S</div>
+                            <div class="community-info">
+                                <h4>Scripters Guild</h4>
+                                <span class="community-type">Programming</span>
+                            </div>
+                        </div>
+                        <p>Learn Lua scripting, debug code, and collaborate on programming challenges</p>
+                        <div class="community-stats">
+                            <span><i class="fa-solid fa-users"></i> 94K members</span>
+                            <span><i class="fa-solid fa-comment"></i> Active daily</span>
+                        </div>
+                        <a href="#" class="btn-view-community">View Community</a>
+                    </div>
+
+                    <div class="community-card">
+                        <div class="community-header">
+                            <div class="community-avatar">R</div>
+                            <div class="community-info">
+                                <h4>Roleplay Central</h4>
+                                <span class="community-type">Roleplay</span>
+                            </div>
+                        </div>
+                        <p>Connect with roleplayers, find games, and organize RP events</p>
+                        <div class="community-stats">
+                            <span><i class="fa-solid fa-users"></i> 125K members</span>
+                            <span><i class="fa-solid fa-comment"></i> Very active</span>
+                        </div>
+                        <a href="#" class="btn-view-community">View Community</a>
+                    </div>
+
+                    <div class="community-card">
+                        <div class="community-header">
+                            <div class="community-avatar">A</div>
+                            <div class="community-info">
+                                <h4>Artists Collective</h4>
+                                <span class="community-type">Art & Design</span>
+                            </div>
+                        </div>
+                        <p>Share artwork, get feedback, and collaborate on creative projects</p>
+                        <div class="community-stats">
+                            <span><i class="fa-solid fa-users"></i> 48K members</span>
+                            <span><i class="fa-solid fa-comment"></i> Active</span>
+                        </div>
+                        <a href="#" class="btn-view-community">View Community</a>
+                    </div>
+
+                    <div class="community-card">
+                        <div class="community-header">
+                            <div class="community-avatar">T</div>
+                            <div class="community-info">
+                                <h4>Trading Network</h4>
+                                <span class="community-type">Trading</span>
+                            </div>
+                        </div>
+                        <p>Buy, sell, and trade limited items with verified traders</p>
+                        <div class="community-stats">
+                            <span><i class="fa-solid fa-users"></i> 71K members</span>
+                            <span><i class="fa-solid fa-comment"></i> Active</span>
+                        </div>
+                        <a href="#" class="btn-view-community">View Community</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Upcoming Events -->
+            <div class="events-section">
+                <h2 class="section-title">UPCOMING EVENTS</h2>
+                <p class="section-subtitle">Don't miss out on these community events</p>
+
+                <div class="events-grid">
+
+                    <div class="event-card">
+                        <span class="event-date-badge">JAN 15, 2026</span>
+                        <h4>Game Jam 2026 Kickoff</h4>
+                        <p>Join creators worldwide for a 48-hour game development challenge with amazing prizes</p>
+                        <div class="event-meta">
+                            <span><i class="fa-solid fa-clock"></i> 48 hours</span>
+                            <span><i class="fa-solid fa-trophy"></i> $50K prizes</span>
+                        </div>
+                        <a href="#" class="btn-rsvp">RSVP Now</a>
+                    </div>
+
+                    <div class="event-card">
+                        <span class="event-date-badge">JAN 22, 2026</span>
+                        <h4>Developer Q&A Session</h4>
+                        <p>Live stream with Roblox engineers answering your development questions</p>
+                        <div class="event-meta">
+                            <span><i class="fa-solid fa-clock"></i> 2 hours</span>
+                            <span><i class="fa-solid fa-video"></i> Live stream</span>
+                        </div>
+                        <a href="#" class="btn-rsvp">Set Reminder</a>
+                    </div>
+
+                    <div class="event-card">
+                        <span class="event-date-badge">FEB 5, 2026</span>
+                        <h4>Community Showcase Event</h4>
+                        <p>Present your best creations to the community and win recognition</p>
+                        <div class="event-meta">
+                            <span><i class="fa-solid fa-clock"></i> 4 hours</span>
+                            <span><i class="fa-solid fa-users"></i> All welcome</span>
+                        </div>
+                        <a href="#" class="btn-rsvp">Register</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Creator Spotlight -->
+            <div class="spotlight-section">
+                <h2><i class="fa-solid fa-star"></i> CREATOR SPOTLIGHT</h2>
+
+                <div class="spotlight-grid">
+
+                    <div class="spotlight-card">
+                        <div class="creator-profile">
+                            <div class="creator-image">E</div>
+                            <div class="creator-details">
+                                <h4>Emma Studios</h4>
+                                <span class="creator-title">Game Developer</span>
+                            </div>
+                        </div>
+                        <p>"Building on Roblox changed my life. I went from a hobby creator to running my own studio with 200M+ visits!"</p>
+                        <div class="creator-achievements">
+                            <span><i class="fa-solid fa-eye"></i> 200M visits</span>
+                            <span><i class="fa-solid fa-heart"></i> 95% rating</span>
+                        </div>
+                    </div>
+
+                    <div class="spotlight-card">
+                        <div class="creator-profile">
+                            <div class="creator-image">K</div>
+                            <div class="creator-details">
+                                <h4>KaiDev</h4>
+                                <span class="creator-title">Scripter</span>
+                            </div>
+                        </div>
+                        <p>"The Roblox community taught me everything I know. Now I help others learn to code through tutorials and mentorship."</p>
+                        <div class="creator-achievements">
+                            <span><i class="fa-solid fa-users"></i> 50K students</span>
+                            <span><i class="fa-solid fa-video"></i> 200+ tutorials</span>
+                        </div>
+                    </div>
+
+                    <div class="spotlight-card">
+                        <div class="creator-profile">
+                            <div class="creator-image">M</div>
+                            <div class="creator-details">
+                                <h4>MysticBuilds</h4>
+                                <span class="creator-title">3D Artist</span>
+                            </div>
+                        </div>
+                        <p>"Creating beautiful worlds on Roblox is my passion. The community's support has been incredible throughout my journey."</p>
+                        <div class="creator-achievements">
+                            <span><i class="fa-solid fa-palette"></i> 500+ builds</span>
+                            <span><i class="fa-solid fa-award"></i> Featured artist</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Community Guidelines CTA -->
+            <div class="guidelines-cta">
+                <h2>BUILD A BETTER COMMUNITY TOGETHER</h2>
+                <p>Everyone plays a role in keeping Roblox safe, welcoming, and fun. Familiarize yourself with our community standards and help us maintain a positive environment for all.</p>
+                
+                <div class="guidelines-buttons">
+                    <a href="#" class="btn-cta btn-primary-cta">
+                        <i class="fa-solid fa-book"></i> Read Community Standards
+                    </a>
+                    <a href="#" class="btn-cta btn-secondary-cta">
+                        <i class="fa-solid fa-flag"></i> Report Violations
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}

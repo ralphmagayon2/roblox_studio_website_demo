@@ -1,0 +1,317 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - Education{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/resources/education.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="education-wrapper">
+        <div class="education-container">
+
+            <!-- Hero Section -->
+            <div class="education-hero">
+                <h1>ROBLOX EDUCATION</h1>
+                <p>Empower students to learn coding, game design, and digital citizenship through creative play. Bring Roblox into your classroom with free curriculum, professional development, and educational resources.</p>
+                
+                <div class="education-hero-buttons">
+                    <a href="#" class="btn-hero btn-hero-primary">
+                        <i class="fa-solid fa-chalkboard-teacher"></i> For Educators
+                    </a>
+                    <a href="#" class="btn-hero btn-hero-secondary">
+                        <i class="fa-solid fa-graduation-cap"></i> For Students
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mission Statement -->
+            <div class="mission-section">
+                <h2>OUR EDUCATION MISSION</h2>
+                <p>We believe in the power of play to inspire the next generation of creators, developers, and digital citizens. Through Roblox Education, we provide free, standards-aligned curriculum that teaches coding, entrepreneurship, and digital literacy in an engaging, hands-on way.</p>
+            </div>
+
+            <!-- Programs Section -->
+            <div class="programs-section">
+                <h2 class="section-title">EDUCATION PROGRAMS</h2>
+                <p class="section-subtitle">Comprehensive learning solutions for every classroom</p>
+
+                <div class="programs-grid">
+
+                    <div class="program-card">
+                        <span class="program-badge">GRADES 3-5</span>
+                        <div class="program-icon"><i class="fa-solid fa-star"></i></div>
+                        <h3>Introduction to Coding</h3>
+                        <p>Perfect for beginners. Students learn fundamental coding concepts through block-based programming and visual scripting.</p>
+                        
+                        <ul class="program-features">
+                            <li>No prior experience required</li>
+                            <li>10-15 hours of curriculum</li>
+                            <li>Standards-aligned lessons</li>
+                            <li>Printable resources included</li>
+                        </ul>
+                        
+                        <a href="#" class="btn-learn-more">Learn More</a>
+                    </div>
+
+                    <div class="program-card">
+                        <span class="program-badge">GRADES 6-8</span>
+                        <div class="program-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Game Development</h3>
+                        <p>Students design and build their own games while learning Lua programming, 3D design, and game mechanics.</p>
+                        
+                        <ul class="program-features">
+                            <li>Text-based coding with Lua</li>
+                            <li>20-30 hours of curriculum</li>
+                            <li>Project-based learning</li>
+                            <li>Career exploration activities</li>
+                        </ul>
+                        
+                        <a href="#" class="btn-learn-more">Learn More</a>
+                    </div>
+
+                    <div class="program-card">
+                        <span class="program-badge">GRADES 9-12</span>
+                        <div class="program-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h3>Advanced CS & Entrepreneurship</h3>
+                        <p>Advanced programming concepts, software engineering practices, and monetization strategies for aspiring developers.</p>
+                        
+                        <ul class="program-features">
+                            <li>Advanced Lua scripting</li>
+                            <li>30+ hours of curriculum</li>
+                            <li>Real-world skills & portfolio building</li>
+                            <li>Entrepreneurship focus</li>
+                        </ul>
+                        
+                        <a href="#" class="btn-learn-more">Learn More</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Curriculum Topics -->
+            <div class="curriculum-section">
+                <h2>CURRICULUM TOPICS</h2>
+
+                <div class="curriculum-grid">
+
+                    <div class="curriculum-card">
+                        <div class="curriculum-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h4>Coding & Programming</h4>
+                        <p>Learn Lua scripting, algorithms, data structures, and computational thinking through hands-on projects.</p>
+                        <div class="curriculum-meta">
+                            <span><i class="fa-solid fa-clock"></i> 20+ lessons</span>
+                            <span><i class="fa-solid fa-layer-group"></i> All levels</span>
+                        </div>
+                    </div>
+
+                    <div class="curriculum-card">
+                        <div class="curriculum-icon"><i class="fa-solid fa-cube"></i></div>
+                        <h4>3D Design & Modeling</h4>
+                        <p>Create 3D environments, characters, and objects using Roblox Studio's building and modeling tools.</p>
+                        <div class="curriculum-meta">
+                            <span><i class="fa-solid fa-clock"></i> 15+ lessons</span>
+                            <span><i class="fa-solid fa-layer-group"></i> Beginner-Advanced</span>
+                        </div>
+                    </div>
+
+                    <div class="curriculum-card">
+                        <div class="curriculum-icon"><i class="fa-solid fa-gamepad"></i></div>
+                        <h4>Game Design</h4>
+                        <p>Master game mechanics, level design, player experience, and balancing to create engaging gameplay.</p>
+                        <div class="curriculum-meta">
+                            <span><i class="fa-solid fa-clock"></i> 18+ lessons</span>
+                            <span><i class="fa-solid fa-layer-group"></i> Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="curriculum-card">
+                        <div class="curriculum-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h4>Digital Citizenship</h4>
+                        <p>Understand online safety, privacy, ethics, and responsible behavior in digital communities.</p>
+                        <div class="curriculum-meta">
+                            <span><i class="fa-solid fa-clock"></i> 10+ lessons</span>
+                            <span><i class="fa-solid fa-layer-group"></i> All ages</span>
+                        </div>
+                    </div>
+
+                    <div class="curriculum-card">
+                        <div class="curriculum-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h4>Entrepreneurship</h4>
+                        <p>Learn business fundamentals, marketing, monetization, and how to turn creativity into income.</p>
+                        <div class="curriculum-meta">
+                            <span><i class="fa-solid fa-clock"></i> 12+ lessons</span>
+                            <span><i class="fa-solid fa-layer-group"></i> High School</span>
+                        </div>
+                    </div>
+
+                    <div class="curriculum-card">
+                        <div class="curriculum-icon"><i class="fa-solid fa-users"></i></div>
+                        <h4>Collaboration & Teamwork</h4>
+                        <p>Work in teams, communicate effectively, and manage group projects from concept to completion.</p>
+                        <div class="curriculum-meta">
+                            <span><i class="fa-solid fa-clock"></i> 8+ lessons</span>
+                            <span><i class="fa-solid fa-layer-group"></i> All levels</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Resources -->
+            <div class="resources-section">
+                <h2 class="section-title">EDUCATOR RESOURCES</h2>
+                <p class="section-subtitle">Everything you need to bring Roblox into your classroom</p>
+
+                <div class="resources-grid">
+
+                    <a href="#" class="resource-card">
+                        <div class="resource-icon"><i class="fa-solid fa-book-open"></i></div>
+                        <h4>Lesson Plans</h4>
+                        <p>Detailed, standards-aligned lesson plans with objectives, activities, and assessments</p>
+                        <span class="resource-link">Download Free <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="#" class="resource-card">
+                        <div class="resource-icon"><i class="fa-solid fa-video"></i></div>
+                        <h4>Tutorial Videos</h4>
+                        <p>Step-by-step video guides for teachers and students covering every lesson</p>
+                        <span class="resource-link">Watch Now <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="#" class="resource-card">
+                        <div class="resource-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <h4>Professional Development</h4>
+                        <p>Free online courses and certifications to help educators master Roblox Studio</p>
+                        <span class="resource-link">Get Certified <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="#" class="resource-card">
+                        <div class="resource-icon"><i class="fa-solid fa-users-cog"></i></div>
+                        <h4>Educator Community</h4>
+                        <p>Connect with thousands of teachers using Roblox in their classrooms worldwide</p>
+                        <span class="resource-link">Join Community <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="#" class="resource-card">
+                        <div class="resource-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <h4>Printable Worksheets</h4>
+                        <p>Ready-to-use handouts, coding challenges, and assessment materials</p>
+                        <span class="resource-link">Download PDFs <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="#" class="resource-card">
+                        <div class="resource-icon"><i class="fa-solid fa-headset"></i></div>
+                        <h4>Technical Support</h4>
+                        <p>Get help with setup, troubleshooting, and implementation from our support team</p>
+                        <span class="resource-link">Get Support <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Benefits -->
+            <div class="benefits-section">
+                <h2>WHY CHOOSE ROBLOX EDUCATION?</h2>
+
+                <div class="benefits-grid">
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon-wrapper">
+                            <div class="benefit-icon"><i class="fa-solid fa-dollar-sign"></i></div>
+                        </div>
+                        <h4>100% Free</h4>
+                        <p>All curriculum, resources, and software are completely free for educators and students</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon-wrapper">
+                            <div class="benefit-icon"><i class="fa-solid fa-check-circle"></i></div>
+                        </div>
+                        <h4>Standards-Aligned</h4>
+                        <p>Curriculum aligns with CSTA, ISTE, and Common Core standards</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon-wrapper">
+                            <div class="benefit-icon"><i class="fa-solid fa-heart"></i></div>
+                        </div>
+                        <h4>Student Engagement</h4>
+                        <p>Students love learning with Roblox, leading to higher engagement and retention</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon-wrapper">
+                            <div class="benefit-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        </div>
+                        <h4>Real-World Skills</h4>
+                        <p>Teaches career-ready skills in programming, design, and entrepreneurship</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="testimonials-section">
+                <h2 class="section-title">EDUCATOR TESTIMONIALS</h2>
+                <p class="section-subtitle">Hear from teachers using Roblox in their classrooms</p>
+
+                <div class="testimonials-grid">
+
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">"My students are more engaged than ever. They don't even realize they're learning complex coding concepts because they're having so much fun creating games!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">M</div>
+                            <div class="author-details">
+                                <h5>Ms. Rodriguez</h5>
+                                <p>Middle School CS Teacher, Texas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">"Roblox Education has transformed my classroom. The curriculum is easy to follow, and I've seen shy students become confident programmers."</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">J</div>
+                            <div class="author-details">
+                                <h5>Mr. Johnson</h5>
+                                <p>STEM Coordinator, California</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">"The professional development courses gave me the confidence to teach coding even without a CS background. Now I'm running an after-school game dev club!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">L</div>
+                            <div class="author-details">
+                                <h5>Mrs. Lee</h5>
+                                <p>Elementary Teacher, New York</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h2>READY TO GET STARTED?</h2>
+                <p>Join thousands of educators worldwide who are inspiring the next generation of creators. Download free curriculum and start teaching with Roblox today.</p>
+                
+                <div class="cta-buttons">
+                    <a href="#" class="btn-cta btn-primary-cta">
+                        <i class="fa-solid fa-download"></i> Download Curriculum
+                    </a>
+                    <a href="#" class="btn-cta btn-secondary-cta">
+                        <i class="fa-solid fa-envelope"></i> Contact Our Team
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}

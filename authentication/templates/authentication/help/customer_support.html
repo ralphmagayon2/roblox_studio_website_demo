@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - Customer Support{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/help/customer_support.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="customer-support-wrapper">
+        <div class="customer-support-container">
+
+            {% comment %} Hero Section {% endcomment %}
+            <div class="cs-hero">
+                <h1>CUSTOMER SUPPORT</h1>
+                <p>Get personalized assistance from our dedicated support team. Submit a ticket, track your request, or connect with us directly.</p>
+            </div>
+
+            {% comment %} Ticket Tracker {% endcomment %}
+            <div class="ticket-tracker">
+                <h2>TRACK YOUR TICKET</h2>
+                <p>Enter your ticket ID to check the status of your support request</p>
+
+                <div class="ticket-input-group">
+                    <input type="text" class="ticket-input" placeholder="Enter Ticket ID (e.g., RBLX-123456)">
+                    <button class="btn-track"><i class="fa-solid fa-magnifying-glass"></i> Track</button>
+                </div>
+            </div>
+
+            {% comment %} Support Options {% endcomment %}
+            <h2 class="section-title">CONTACT SUPPORT</h2>
+            <div class="support-option-grid">
+
+                <div class="support-option-card">
+                    <span class="support-badge">FASTEST RESPONSE</span>
+                    <div class="support-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h3>Live Chat</h3>
+                    <p>Connect with a support agent in real-time for immediate assistance with your issues.</p>
+                    <a href="#" class="btn-support-action">Start Chat Now</a>
+                </div>
+
+                <div class="support-option-card">
+                    <span class="support-badge">DETAILED SUPPORT</span>
+                    <div class="support-icon"><i class="fa-solid fa-ticket"></i></div>
+                    <h3>Submit Ticket</h3>
+                    <p>Create a detailed support request and our team will respond within 24-48 hours.</p>
+                    <a href="#submit-ticket" class="btn-support-action">Create Ticket</a>
+                </div>
+
+                <div class="support-option-card">
+                    <span class="support-badge">DIRECT CONTACT</span>
+                    <div class="support-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>Email Support</h3>
+                    <p>Send us an email with your concerns and receive a comprehensive response from our team.</p>
+                    <a href="mailto:support@roblox.com" class="btn-support-action">Send Email</a>
+                </div>
+
+            </div>
+
+            {% comment %} Response Time Information {% endcomment %}
+            <div class="response-time-info">
+                <h3>Expected Response Time</h3>
+                <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 20px;">Our team works around the clock to provide timely support</p>
+
+                <div class="response-times">
+                    <div class="response-time-item">
+                        <h4>Live Chat</h4>
+                        <p>Immediate - 5 minutes</p>
+                    </div>
+                    
+                    <div class="response-time-item">
+                        <h4>Support Ticket</h4>
+                        <p>24 - 48 hours</p>
+                    </div>
+
+                    <div class="response-time-item">
+                        <h4>Email Support</h4>
+                        <p>24 - 72 hours</p>
+                    </div>
+
+                    <div class="response-time-item">
+                        <h4>Urgent Issues</h4>
+                        <p>Priority handling</p>
+                    </div>
+                </div>
+            </div>
+
+            {% comment %} Submit Ticket Form {% endcomment %}
+            <div class="submit-ticket-section" id="submit-ticket">
+                <h2>SUBMIT A SUPPORT TICKET</h2>
+                <p>Fill out the form bellow and our support team will get back to you as soon as possible.</p>
+
+                <form action="" method="POST">
+                    <div class="form-grid">
+                        
+                        <div class="form-group">
+                            <label for="" class="form-label">Full Name *</label>
+                            <input type="text" class="form-input" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="" class="form-label">Email Address *</label>
+                            <input type="email" class="form-input" placeholder="your.email@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="" class="form-label">Issues Category *</label>
+                            <select class="form-select" required>
+                                <option value="">Select a Category</option>
+                                <option value="account">Account & Login Issues</option>
+                                <option value="billing">Billing & Payments</option>
+                                <option value="technical">Technical Problems</option>
+                                <option value="safety">Safety & Moderation</option>
+                                <option value="robux">Robux & Items</option>
+                                <option value="Studio">Studio & Development</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="" class="form-label">Subject *</label>
+                            <textarea class="form-textarea" placeholder="Please provide as much detail as possible about your issues, including any error messages, step to reproduce, and what you've already tired..." required></textarea>
+                            <p class="form-note">The more details you provide, the faster we can help resolve your issue</p>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="" class="form-label">Attachments (Optional)</label>
+                            <input type="file" class="form-input" multiple accept="image/*.pdf">
+                            <p class="form-note">You can attach screenshots, videos, or documents, to help us understand your issue better</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit-ticket">
+                        <i class="fa-solid fa-paper-plane"></i> SUBMIT TICKET
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}
+
+{% block js %}
+    <script src="{% static 'js/help/customer_support.js' %}"></script>
+{% endblock js %}

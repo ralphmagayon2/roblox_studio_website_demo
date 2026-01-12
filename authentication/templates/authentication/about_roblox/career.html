@@ -1,0 +1,269 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - Career{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/about_roblox/career.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="careers-wrapper">
+        <div class="careers-container">
+
+            {% comment %} Hero Section {% endcomment %}
+            <div class="careers-hero">
+                <h1>🚀 JOIN TEAM ROBLOX</h1>
+                <p>Help us build the future where everyone can create, connect, and express themselves through immersive experiences</p>
+                <div class="search-jobs">
+                    <input type="text" class="search-input" placeholder="Search jobs by title, keyword, or location...">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+
+            {% comment %} Benefits {% endcomment %}
+            <section>
+                <h2 class="section-title">Why Work at Roblox?</h2>
+                <div class="benefits-grid">
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+                        <h3 class="benefit-title">Competitive Salary</h3>
+                        <p class="benefit-description">Industry-leading compensation packages with equity opportunities and performance bonuses.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-hospital"></i></div>
+                        <h3 class="benefit-title">Health & Wellness</h3>
+                        <p class="benefit-description">Comprehensive medical, dental, vision insurance, and mental health support programs.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-house"></i></div>
+                        <h3 class="benefit-title">Flexible Work</h3>
+                        <p class="benefit-description">Hybrid work options with flexible hours to maintain work-life balance.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-book"></i></div>
+                        <h3 class="benefit-title">Learning & Development</h3>
+                        <p class="benefit-description">Continous learning opportunities, coherences, courses, and development programs.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-tree"></i></div>
+                        <h3 class="benefit-title">Unlimited PTO</h3>
+                        <p class="benefit-description">Take time where you need to recharge with our unlimited paid time off policy.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-users"></i></div>
+                        <h3 class="benefit-title">Parental Support</h3>
+                        <p class="benefit-description">Generous parental leave, famility planning support, and childcare assistance.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-plate-wheat"></i></div>
+                        <h3 class="benefit-title">Free Meals</h3>
+                        <p class="benefit-description">Daily centered lunches, snacks, and beverages at all office locations.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-gamepad"></i></div>
+                        <h3 class="benefit-title">Robux Stipend</h3>
+                        <p class="benefit-description">Monthly robux allowance to experience our platform a user's perspective.</p>
+                    </div>
+                </div>
+            </section>
+
+            {% comment %} Departmens {% endcomment %}
+            <section>
+                <h2 class="section-title">Explore Departments</h2>
+                <div class="departments-grid">
+
+                    <div class="department-card" data-filter="engineering">
+                        <div class="department-icon"><i class="fa-solid fa-laptop"></i></div>
+                        <h3 class="department-name">Engineering</h3>
+                        <p class="department-openings">45 openings</p>
+                    </div>
+
+                    <div class="department-card" data-filter="product">
+                        <div class="department-icon"><i class="fa-solid fa-palette"></i></div>
+                        <h3 class="department-name">Product & Design</h3>
+                        <p class="department-openings">23 openings</p>
+                    </div>
+
+                    <div class="department-card" data-filter="marketing">
+                        <div class="department-icon"><i class="fa-solid fa-mobile"></i></div>
+                        <h3 class="department-name">Marketing</h3>
+                        <p class="department-openings">18 openings</p>
+                    </div>
+
+                    <div class="department-card" data-filter="sales">
+                        <div class="department-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <h3 class="department-name">Sales</h3>
+                        <p class="department-openings">12 openings</p>
+                    </div>
+
+                    <div class="department-card" data-filter="data">
+                        <div class="department-icon"><i class="fa-solid fa-chart-column"></i></div>
+                        <h3 class="department-name">Data Science</h3>
+                        <p class="department-openings">15 openings</p>
+                    </div>
+
+                    <div class="department-card" data-filter="hr">
+                        <div class="department-icon"><i class="fa-solid fa-users"></i></div>
+                        <h3 class="department-name">People & HR</h3>
+                        <p class="department-openings">8 openings</p>
+                    </div>
+                </div>
+            </section>
+
+            {% comment %} Job Listing {% endcomment %}
+            <section class="job-listings">
+                <h2 class="section-title">Open Positions</h2>
+
+                <div class="filters">
+                    <button class="filter-btn active">All Departments</button>
+                    <button class="filter-btn">Engineering</button>
+                    <button class="filter-btn">Product</button>
+                    <button class="filter-btn">Remote</button>
+                    <button class="filter-btn">Full-Time</button>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3 class="job-title">Senior Software Engineer - Platform</h3>
+                        <div class="job-meta">
+                            <span class="job-tag">💻 Engineering</span>
+                            <span class="job-tag">📍 San Mateo, CA</span>
+                            <span class="job-tag">⏰ Full-Time</span>
+                        </div>
+                        <p class="job-description">Build and scale the infrastructure that powers millions of experiences. Work on distributed systems, cloud architecture, and performance optimization.</p>
+                    </div>
+                    <button class="job-apply">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3 class="job-title">Product Designer - Creator Tools</h3>
+                        <div class="job-meta">
+                            <span class="job-tag">🎨 Product & Design</span>
+                            <span class="job-tag">📍 Remote</span>
+                            <span class="job-tag">⏰ Full-Time</span>
+                        </div>
+                        <p class="job-description">Design intuitive creator tools that empower millions to build amazing experiences. Own the end-to-end design process from the concept to launch.</p>
+                    </div>
+                    <button class="job-apply">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3 class="job-title">Data Scientist - Machine Learning</h3>
+                        <div class="job-meta">
+                            <span class="job-tag">📊 Data Science</span>
+                            <span class="job-tag">📍 San Mateo, CA</span>
+                            <span class="job-tag">⏰ Full-Time</span>
+                        </div>
+                        <p class="job-description">Apply ML to improve content discovery, moderation, and personalization. Work with petabytes of data to drive product decisions.</p>
+                    </div>
+                    <button class="job-apply">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3 class="job-title">Market Manager - Brand Strategy</h3>
+                        <div class="job-meta">
+                            <span class="job-tag">📱 Marketing</span>
+                            <span class="job-tag">📍 Los Angeles, CA</span>
+                            <span class="job-tag">⏰ Full-Time</span>
+                        </div>
+                        <p class="job-description">Shape Roblox's brand narrative campaigns that resonate with our global community of creators and players.</p>
+                    </div>
+                    <button class="job-apply">Apply Now</button>
+                </div>
+
+            </section>
+
+            {% comment %} Culture {% endcomment %}
+            <section class="culture-section">
+                <h2 class="section-title">Life at Roblox</h2>
+
+                <div class="culture-grid">
+
+                    <div class="culture-item">
+                        <div class="culture-image">🎉</div>
+                        <p class="culture-caption">Team events and celebrations bring us together to build lasting connections.</p>
+                    </div>
+
+                    <div class="culture-item">
+                        <div class="culture-image">🤝</div>
+                        <p class="culture-caption">Collaboration across teams drives innovation and creates better products.</p>
+                    </div>
+
+                    <div class="culture-item">
+                        <div class="culture-image">🌍</div>
+                        <p class="culture-caption">Global offices allow us to work with talented people from around the world.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            {% comment %} Testimonials {% endcomment %}
+            <section class="testimonials-section">
+                <h2 class="section-title">What Our Team Says</h2>
+
+                <div class="testimonials-grid">
+
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">"Working at Roblox has been the highlight of my career. The impact we make on millions of users every day is incredibly rewarding."</p>
+
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👨‍💻</div>
+                            <div class="author-info">
+                                <h4>Sarah Chen</h4>
+                                <p>Senior Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">"The culture here is amazing. Everyone is passionate about building the future of digital experiences, and that energy is contagious."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👩‍🎨</div>
+                            <div class="author-info">
+                                <h4>Marcus Johnson</h4>
+                                <p>Product Designer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">"Roblox invests in my growth through continuous learning opportunities. I've grown more here in 2 years than I did in 5 at my previous company."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👨‍💼</div>
+                            <div class="author-info">
+                                <h4>Emma Rodriguez</h4>
+                                <p>Data Scientist</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            {% comment %} CTA Section {% endcomment %}
+            <div class="cta-section">
+                <h2>READY TO BUILD THE FUTURE?</h2>
+                <p>Join our team and help create experiences that bring people together</p>
+                <a href="" class="btn-cta">View All Openings</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+{% block js %}
+    <script src="{% static 'js/about_roblox/career.js' %}"></script>
+{% endblock js %}

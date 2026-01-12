@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - About{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/about_roblox/about.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="about-wrapper">
+        <div class="about-container">
+
+            {% comment %} Hero Section {% endcomment %}
+            <div class="about-hero">
+                <h1>ABOUT ROBLOX</h1>
+                <p class="subtitle">Powering Imagination Through Plan</p>
+                <p class="description">We're building the ultimate platform for shared experience where millions of people come together to play, create, and imagine with friends.</p>
+            </div>
+
+            {% comment %} Mission Section {% endcomment %}
+            <section class="mission-section">
+                <div class="mission-content">
+                    <h2>Our Mission</h2>
+                    <p>At a Roblox, we believe in the power of imagination. Our mission is to connect a billion people with optimism and civility through shared experiences.</p>
+                    <p>We're building at metaverse by providing tools that empower our community to bring any experience they can imagine to life. Every day, tens of millions of people around the world have fun with friends as they explore millions of immersive digital experiences.</p>
+                    <p>All of these experiences are built by the Roblox community, made up of millions of creators.</p>
+                </div>
+                <div class="mission-image">🌍</div>
+            </section>
+
+            {% comment %} Stats Section {% endcomment %}
+            <section class="stats-section">
+                <div class="stats-grid">
+
+                    <div class="stat-item">
+                        <span-stat class="stat-number">70M+</span-stat>
+                        <span class="stat-label">Daily Active Users</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <span-stat class="stat-number">15M+</span-stat>
+                        <span class="stat-label">Experiences</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <span-stat class="stat-number">180+</span-stat>
+                        <span class="stat-label">Countries</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <span-stat class="stat-number">2.5B</span-stat>
+                        <span class="stat-label">Hours Engage Daily</span>
+                    </div>
+
+                </div>
+            </section>
+
+            {% comment %} Values Section {% endcomment %}
+            <section>
+                <h2 class="section-title">Our Core Values</h2>
+                <div class="values-grid">
+
+                    <div class="value-card">
+                        <div class="value-icon">🎯</div>
+                        <h3 class="value-title">Respect the Community</h3>
+                        <p class="value-description">We prioritize the safety and well-being of our users. Every decision we make puts our community first.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">💡</div>
+                        <h3 class="value-title">Take the Long View</h3>
+                        <p class="value-description">We build for the future, making sustainable decisions that will benefit generations to come.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">🚀</div>
+                        <h3 class="value-title">Empower Creators</h3>
+                        <p class="value-description">We provide the tools and platform for anyone to build, share, and monetize their creations.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">🤝</div>
+                        <h3 class="value-title">Build Together</h3>
+                        <p class="value-description">Collaboration drives innovation. We work together to create something greater than ourselves</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">🌟</div>
+                        <h3 class="value-title">Be Bold</h3>
+                        <p class="value-description">We're not afraid to take risks and challenge the status quo to achieve extraordinary results.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">🎓</div>
+                        <h3 class="value-title">Learn & Grow</h3>
+                        <p class="value-description">We embrace challenges as opportunities to learn, and become better every day.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            {% comment %} Timeline Section {% endcomment %}
+            <section class="timeline-section">
+                <h2 class="section-title">Our Journey</h2>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2004</div>
+                            <h2 class="timeline-title">The Beginning</h2>
+                            <p class="timeline-description">Roblox was founded with a vision to reimagine the way people come together through play.</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2006</div>
+                            <h2 class="timeline-title">Official Lunch</h2>
+                            <p class="timeline-description">Roblox officially launched, opening the doors to a new world of user-generated content.</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2013</div>
+                            <h2 class="timeline-title">Mobile Revolution</h2>
+                            <p class="timeline-description">Launched on mobile platforms, making Roblox accessible anywhere, anytime.</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2021</div>
+                            <h2 class="timeline-title">Going Public</h2>
+                            <p class="timeline-description">Roblox went public on the NYSE, marking a major milestone in our journey.</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2024</div>
+                            <h2 class="timeline-title">Building the Future</h2>
+                            <p class="timeline-description">Continuing to innovate with new technologies, expanding our platform and growing our global community.</p>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                </div>
+            </section>
+
+            {% comment %} Leadership Team {% endcomment %}
+            <section>
+                <h2 class="section-title">Leadership Team</h2>
+                <div class="team-grid">
+
+                    <div class="team-member">
+                        <div class="member-image">👨‍💼</div>
+                        <div class="member-info">
+                            <h3 class="member-name">Ralph Joseph Magayon</h3>
+                            <p class="member-position">CEO & Founder</p>
+                            <p class="member-bio">Visionary leader with a passion for education, innovation, and building the future of digital experiences.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">👩‍💼</div>
+                        <div class="member-info">
+                            <h3 class="member-name">Michael Guthrie</h3>
+                            <p class="member-position">CFO</p>
+                            <p class="member-bio">Financial expert driving sustainable growth and strategic investments in our platform.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">👨‍💻</div>
+                        <div class="member-info">
+                            <h3 class="member-name">Daniel Sturman</h3>
+                            <p class="member-position">CTO</p>
+                            <p class="member-bio">Technology innovator leading our engineering teams to build cutting-edge platform capabilities.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">👩‍💻</div>
+                        <div class="member-info">
+                            <h3 class="member-name">Christina Wotton</h3>
+                            <p class="member-position">VP of Brand</p>
+                            <p class="member-bio">Creative leader shaping our global brand community relationships.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {% comment %} CTA section {% endcomment %}
+            <div class="cta-section">
+                <h2>JOIN US ON THIS JOURNEY</h2>
+                <p>Help us build the future of digital experiences</p>
+                <a href="#" class="btn-cta">Explore Careers</a>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}

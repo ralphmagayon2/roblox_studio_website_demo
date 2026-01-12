@@ -1,0 +1,259 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - Blog{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/resources/blog.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="blog-wrapper">
+        <div class="blog-container">
+
+            {% comment %} Hero Section {% endcomment %}
+            <div class="blog-hero">
+                <h1>ROBLOX BLOG</h1>
+                <p>Stay up to date with the latest news, updates, creator stories, and insights from the Roblox community. Discover what's new on the platform.</p>
+            </div>
+
+            {% comment %} Search and Filter {% endcomment %}
+            <div class="search-filter-section">
+                <div class="blog-search">
+                    <input type="text" class="search-input" placeholder="Search articles...">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active">All Posts</button>
+                    <button class="filter-btn">Updates</button>
+                    <button class="filter-btn">Creator Stories</button>
+                    <button class="filter-btn">Development</button>
+                    <button class="filter-btn">Events</button>
+                </div>
+            </div>
+
+            {% comment %} Featured Post {% endcomment %}
+            <div class="featured-section">
+                <div class="featured-post">
+                    <div class="featured-content">
+                        <div class="featured-image">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="featured-text">
+                            <span class="featured-badge">FEATURED</span>
+                            <h2>Introducing New AI-Powered Creation Tools</h2>
+                            <p>We're excited to announce groundbreaking AI tools that will revolutionize how creators build experiences on Roblox. Generate assets, optimize code, and bring your ideas to life faster than ever.</p>
+                            <div class="featured-meta">
+                                <span><i class="fa-solid fa-calendar"></i> December 08, 2024</span>
+                                <span><i class="fa-solid fa-user"></i> Roblox Team</span>
+                                <span><i class="fa-solid fa-clock"></i> 5 min read</span>
+                            </div>
+                            <a href="#" class="btn-read-featured">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% comment %} Recent Posts {% endcomment %}
+            <div class="blog-posts-section">
+                <h2 class="section-title">RECENT POSTS</h2>
+
+                <div class="blog-grid">
+
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">UPDATES</span>
+                            <h3>Platform Performance Improvements</h3>
+                            <p class="blog-excerpt">We've rolled out major optimizations that improve loading times by 40% and reduce lag across all devices...</p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar">R</div>
+                                    <div class="author-info">
+                                        <div class="author-name">Roblox Engineering</div>
+                                        <div class="post-date">Dec 20, 2024</div>
+                                    </div>
+                                </div>
+                                <span class="read-time"><i class="fa-solid fa-clock"></i> 4 min</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">CREATOR STORIES</span>
+                            <h3>How One Teen Built a $1M Game</h3>
+                            <p class="blog-excerpt">Meet Alex, a 17-year-old developer who turned his passion for game design into a thriving business on Roblox...</p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar">S</div>
+                                    <div class="author-info">
+                                        <div class="author-name">Sarah Mitchell</div>
+                                        <div class="post-date">Dec 18, 2024</div>
+                                    </div>
+                                </div>
+                                <span class="read-time"><i class="fa-solid fa-clock"></i> 8 min</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">DEVELOPMENT</span>
+                            <h3>Best Practices for Scripting in 2025</h3>
+                            <p class="blog-excerpt">Level up your Lua skills with these advanced techniques and optimization strategies from top developers...</p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar">M</div>
+                                    <div class="author-info">
+                                        <div class="author-name">Marcus Chen</div>
+                                        <div class="post-date">Dec 15, 2024</div>
+                                    </div>
+                                </div>
+                                <span class="read-time"><i class="fa-solid fa-clock"></i> 12 min</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">EVENTS</span>
+                            <h3>Roblox Developers Conference 2025</h3>
+                            <p class="blog-excerpt">Join us for the biggest developer event of the year with exclusive announcements, workshops, and networking...</p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar">E</div>
+                                    <div class="author-info">
+                                        <div class="author-name">Events Team</div>
+                                        <div class="post-date">Dec 12, 2024</div>
+                                    </div>
+                                </div>
+                                <span class="read-time"><i class="fa-solid fa-clock"></i> 6 min</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <i class="fa-solid fa-shield"></i>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">UPDATES</span>
+                            <h3>New Safety Features Rollout</h3>
+                            <p class="blog-excerpt">Enhanced parental controls, improved chat filtering, and new reporting tools to keep our community safe...</p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar">L</div>
+                                    <div class="author-info">
+                                        <div class="author-name">Safety Team</div>
+                                        <div class="post-date">Dec 10, 2024</div>
+                                    </div>
+                                </div>
+                                <span class="read-time"><i class="fa-solid fa-clock"></i> 5 min</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <i class="fa-solid fa-paintbrush"></i>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">CREATOR STORIES</span>
+                            <h3>Building Immersive Worlds: A Guide</h3>
+                            <p class="blog-excerpt">Top environment artists share their secrets for creating stunning, atmospheric game worlds that players love...</p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar">J</div>
+                                    <div class="author-info">
+                                        <div class="author-name">Jessica Park</div>
+                                        <div class="post-date">Dec 8, 2024</div>
+                                    </div>
+                                </div>
+                                <span class="read-time"><i class="fa-solid fa-clock"></i> 10 min</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            {% comment %} Trending Posts {% endcomment %}
+            <div class="trending-section">
+                <h2><i class="fa-solid fa-fire"></i> TRENDING TOPICS</h2>
+
+                <div class="trending-grid">
+
+                    <div class="trending-card">
+                        <div class="trending-number">#1 TRENDING</div>
+                        <h4>Metaverse Fashion Week Recap</h4>
+                        <div class="trending-stats">
+                            <span><i class="fa-solid fa-eye"></i></span>
+                            <span><i class="fa-solid fa-comment"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="trending-card">
+                        <div class="trending-number">#2 TRENDING</div>
+                        <h4>Cross-Platform Play Update</h4>
+                        <div class="trending-stats">
+                            <span><i class="fa-solid fa-eye"></i> 38K views</span>
+                            <span><i class="fa-solid fa-comment"></i> 654 comments</span>
+                        </div>
+                    </div>
+
+                    <div class="trending-card">
+                        <div class="trending-number">#3 TRENDING</div>
+                        <h4>Monetization Tips for Creators</h4>
+                        <div class="trending-stats">
+                            <span><i class="fa-solid fa-eye"></i> 32K views</span>
+                            <span><i class="fa-solid fa-comment"></i> 521 comments</span>
+                        </div>
+                    </div>
+
+                    <div class="trending-card">
+                        <div class="trending-number">#4 TRENDING</div>
+                        <h4>New Audio Library Expansion</h4>
+                        <div class="trending-stats">
+                            <span><i class="fa-solid fa-eye"></i> 28K views</span>
+                            <span><i class="fa-solid fa-comment"></i> 412 comments</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            {% comment %} Newsletter {% endcomment %}
+            <div class="newsletter-section">
+                <h2><i class="fa-solid fa-envelope"></i> SUBSCRIBE TO OUR NEWSLETTER</h2>
+                <p>Get the Latest Roblox news, updates, and creator stories delivered straight to your inbox every week.</p>
+
+                <form action="" class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn-subscribe">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}
+
+{% block js %}
+    <script src="{% static 'js/resources/blog.js' %}"></script>
+{% endblock js %}

@@ -1,0 +1,319 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Roblox Studio - License{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/legal/license.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="licenses-wrapper">
+        <div class="licenses-container">
+
+            {% comment %} Hero Section {% endcomment %}
+            <div class="licenses-hero">
+                <h1>LICENSES</h1>
+                <p>Roblox uses open source software and other third-party components. Below is a list of licenses and attributions for these components.</p>
+                <span class="last-updated"><i class="fa-solid fa-file-certificate"></i> Last Updated: January 3, 2025</span>
+            </div>
+
+            {% comment %} Table of Contents {% endcomment %}
+            <div class="toc-section">
+                <h3><i class="fa-solid fa-list"></i> Quick Navigation</h3>
+                <ul class="toc-list">
+                    <li><a href="#overview">1. Overview</a></li>
+                    <li><a href="#opensource">2. Open Source Libraries</a></li>
+                    <li><a href="#roblox">3. Roblox Software Licenses</a></li>
+                    <li><a href="#thirdparty">4. Third-Party Assests</a></li>
+                    <li><a href="#attribution">5. Attribution</a></li>
+                </ul>
+            </div>
+
+            <button class="print-button" onclick="window.print()"><i class="fa-solid fa-print"></i> Print Licenses</button>
+
+            {% comment %} Licenses Content {% endcomment %}
+            <div class="licenses-content">
+
+                {% comment %} Section 1 {% endcomment %}
+                <div class="license-section" id="overview">
+                    <h2>Overview</h2>
+
+                    <p>Roblox is built on and incorporates open source software and other third-party components. We are graceful to open source community for their contributions and are committed to complying with all applicable licences.</p>
+
+                    <div class="info-box">
+                        <p><strong>Our Commitment:</strong> We respect the intellectual property rights of others and ensure proper attribution for all third-party components used in our platforms.</p>
+                    </div>
+
+                    <h3>License Types</h3>
+                    <p>The third-party components we use are subject to various open source and propiertary licenses, including but not limited to:</p>
+                    <ul>
+                        <li><strong>MIT Licence:</strong> Permissive license allowing commercial use with attribution</li>
+                        <li><strong>Apache License 2.0:</strong> Permissive license with patent protection</li>
+                        <li><strong>BSD License:</strong> Family of permissive licenses with minimal restrictions</li>
+                        <li><strong>GPL/LGPL:</strong> Copyleft licenses requiring derivative works to open source</li>
+                        <li><strong>Propiertary Licenses:</strong> Commercial license with specific terms</li>
+                    </ul>
+
+                </div>
+
+                {% comment %} Section 2 {% endcomment %}
+                <div class="license-section" id="opensource">
+
+                    <h2>2. Open Source Libraries</h2>
+                    <p>Below is a list of open source libraries and compenents used in Roblox, along with their respective licenses.</p>
+
+                    <div class="libraries-grid">
+
+                        <div class="library-card">
+                            <div class="library-header">
+                                <h4 class="library-name">React</h4>
+                                <span class="license-badge">MIT</span>
+                            </div>
+
+                            <div class="library-version">Version: 18.2.0</div>
+                            <p class="library-description">A JavaScript library for building user interfaces</p>
+
+                            <div class="library-links">
+                                <a href="#" class="library-link"><i class="fa-solid fa-github"></i> GitHub</a>
+                                <a href="#" class="library-link"><i class="fa-solid fa-file-contract"></i> Licenses</a>
+                            </div>
+                        </div>
+
+                        <div class="library-card">
+                            <div class="library-header">
+                                <h4 class="library-name">Webpack</h4>
+                                <span class="license-badge">MIT</span>
+                            </div>
+                            <div class="library-version">Version: 5.88.0</div>
+                            <p class="library-description">Module bundler for JavaScript applications</p>
+                            <div class="library-links">
+                                <a href="#" class="library-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="#" class="library-link"><i class="fa-solid fa-file-contract"></i> License</a>
+                            </div>
+                        </div>
+
+                        <div class="library-card">
+                            <div class="library-header">
+                                <h4 class="library-name">Node.js</h4>
+                                <span class="license-badge">MIT</span>
+                            </div>
+                            <div class="library-version">Version: 20.x</div>
+                            <p class="library-description">JavaScript runtime built on Chrome's V8 engine</p>
+                            <div class="library-links">
+                                <a href="#" class="library-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="#" class="library-link"><i class="fa-solid fa-file-contract"></i> License</a>
+                            </div>
+                        </div>
+
+                        <div class="library-card">
+                            <div class="library-header">
+                                <h4 class="library-name">Three.js</h4>
+                                <span class="license-badge">MIT</span>
+                            </div>
+                            <div class="library-version">Version: r154</div>
+                            <p class="library-description">JavaScript 3D library for WebGL rendering</p>
+                            <div class="library-links">
+                                <a href="#" class="library-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="#" class="library-link"><i class="fa-solid fa-file-contract"></i> License</a>
+                            </div>
+                        </div>
+
+                        <div class="library-card">
+                            <div class="library-header">
+                                <h4 class="library-name">Redis</h4>
+                                <span class="license-badge">BSD-3</span>
+                            </div>
+                            <div class="library-version">Version: 7.2</div>
+                            <p class="library-description">In-memory data structure store</p>
+                            <div class="library-links">
+                                <a href="#" class="library-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="#" class="library-link"><i class="fa-solid fa-file-contract"></i> License</a>
+                            </div>
+                        </div>
+
+                        <div class="library-card">
+                            <div class="library-header">
+                                <h4 class="library-name">PostgreSQL</h4>
+                                <span class="license-badge">PostgreSQL</span>
+                            </div>
+                            <div class="library-version">Version: 15.x</div>
+                            <p class="library-description">Advanced open source relational database</p>
+                            <div class="library-links">
+                                <a href="#" class="library-link"><i class="fa-solid fa-globe"></i> Website</a>
+                                <a href="#" class="library-link"><i class="fa-solid fa-file-contract"></i> License</a>
+                            </div>
+                        </div>
+
+                        <div class="library-card">
+                            <div class="library-header">
+                                <h4 class="library-name">Nginx</h4>
+                                <span class="license-badge">BSD-2</span>
+                            </div>
+                            <div class="library-version">Version: 1.24</div>
+                            <p class="library-description">High-performance HTTP server and reverse proxy</p>
+                            <div class="library-links">
+                                <a href="#" class="library-link"><i class="fa-solid fa-globe"></i> Website</a>
+                                <a href="#" class="library-link"><i class="fa-solid fa-file-contract"></i> License</a>
+                            </div>
+                        </div>
+
+                        <div class="library-card">
+                            <div class="library-header">
+                                <h4 class="library-name">OpenSSL</h4>
+                                <span class="license-badge">Apache 2.0</span>
+                            </div>
+                            <div class="library-version">Version: 3.0</div>
+                            <p class="library-description">Toolkit for SSL/TLS and cryptography</p>
+                            <div class="library-links">
+                                <a href="#" class="library-link"><i class="fa-solid fa-globe"></i> Website</a>
+                                <a href="#" class="library-link"><i class="fa-solid fa-file-contract"></i> License</a>
+                            </div>
+                        </div>
+
+                        <div class="library-card">
+                            <div class="library-header">
+                                <h4 class="library-name">Lua</h4>
+                                <span class="license-badge">MIT</span>
+                            </div>
+                            <div class="library-version">Version: 5.4 (Modified)</div>
+                            <p class="library-description">Lightweight, embeddable scripting language</p>
+                            <div class="library-links">
+                                <a href="#" class="library-link"><i class="fa-solid fa-globe"></i> Website</a>
+                                <a href="#" class="library-link"><i class="fa-solid fa-file-contract"></i> License</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h3>MIT License Example</h3>
+                    <div class="license-text-box">
+                        <pre>
+    MIT License
+
+    Copyright (c) [year] [copyright holders]
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+                        </pre>
+                    </div>
+                </div>
+
+                {% comment %} Section 3 {% endcomment %}
+                <div class="license-section" id="roblox">
+                    <h2>3. Roblox Software License</h2>
+
+                    <h3>Roblox Studio</h3>
+                    <p>Roblox Studio is propiertary software licensed to users under Roblox Terms of Use. Key terms include:</p>
+
+                    <ul>
+                        <li>Free to download and use for personal and commercial game development</li>
+                        <li>Subject to Roblox Terms of Use and Community Standards</li>
+                        <li>Users retain ownership of their created content</li>
+                        <li>Roblox retains ownership of the Studio software and platform infrastructure</li>
+                        <li>No redistribution of reverse engineering allowed</li>
+                    </ul>
+
+                    <h3>Roblox API</h3>
+                    <p>The Roblox API is provided under specific terms:</p>
+
+                    <ul>
+                        <li>Free for developers creating content on Roblox</li>
+                        <li>Subject to rate limits and usage policies</li>
+                        <li>API access requires authentication and adherence to security guidelines</li>
+                        <li>Roblox reserves the right to modify or discontinue API services</li>
+                    </ul>
+                    <div class="info-box">
+                        <p><strong>User Content License:</strong> When you create content on Roblox, you grant Roblox a license to use, display, and distribute that content as part of our services. You retain ownership of your original creations.</p>
+                    </div>
+                </div>
+
+                {% comment %} Section 4 {% endcomment %}
+                <div class="license-section" id="thirdparty">
+                    <h2>4. Third-Party Assets</h2>
+                    
+                    <h3>Fonts</h3>
+                    <p>Roblox uses the following fonts under their respective licenses:</p>
+                    <ul>
+                        <li><strong>Roboto:</strong> Apache License 2.0 by Google</li>
+                        <li><strong>Source Sans Pro:</strong> SIL Open Font License by Adobe</li>
+                        <li><strong>Gotham:</strong> Commercial license from Hoefler & Co.</li>
+                    </ul>
+
+                    <h3>Icons & Graphics</h3>
+                    <p>Icon libraries used in Roblox:</p>
+                    <ul>
+                        <li><strong>Font Awesome:</strong> Icons under CC BY 4.0, Fonts under SIL OFL 1.1, Code under MIT License</li>
+                        <li><strong>Material Icons:</strong> Apache License 2.0 by Google</li>
+                        <li><strong>Custom Roblox Icons:</strong> Proprietary, © Roblox Corporation</li>
+                    </ul>
+
+                    <h3>Audio Libraries</h3>
+                    <p>Audio processing and playback libraries:</p>
+                    <ul>
+                        <li><strong>FMOD:</strong> Commercial license from Firelight Technologies</li>
+                        <li><strong>OpenAL Soft:</strong> LGPL License</li>
+                        <li><strong>libvorbis:</strong> BSD License</li>
+                    </ul>
+                </div>
+
+                {% comment %} Section 5 {% endcomment %}
+                <div class="license-section" id="attribution">
+                    <h2>5. Attribution Requirements</h2>
+
+                    <p>If you use Roblox trademarks, logos, or branding in your projects, you must comply with our Brand Guidelines.</p>
+
+                    <h3>Permitted Uses</h3>
+
+                    <ul>
+                        <li>Factual references to Roblox in articles, videos, or educational materials</li>
+                        <li>Displaying Roblox logo on promotional materials for games created on Roblox</li>
+                        <li>Using "Made" with "Roblox" or "Built on Roblox" attributions</li>
+                    </ul>
+
+                    <h3>Prohibited Uses</h3>
+                    <ul>
+                        <li>Using Roblox branding in a way that implies official endorsement</li>
+                        <li>Modifying or alterning Roblox logos or trademarks</li>
+                        <li>Using Roblox branding for merchandise without permissions</li>
+                        <li>Creating confusingly similar marks for logos</li>
+                    </ul>
+
+                    <h3>Requesting Permissions</h3>
+                    <p>For uses outside of these guidelines, please contact our legal team for permission at <strong>legal@roblox.com</strong></p>
+                </div>
+
+            </div>
+
+            {% comment %} Attribution Section {% endcomment %}
+            <div class="attribution-section">
+                <h3><i class="fa-solid fa-heart"></i> THANK YOU TO THE OPEN SOURCE COMMUNITY</h3>
+                <p>Roblox would not be possible without the incredible work of the open source community. We are grateful for contributions of developers worldwide who make their code freely available.</p>
+                <p>If you believe we have not properly attributed a component or have questions about our licenses compliances, please contact us.</p>
+                <a href="#" class="btn-attribution">Contact Legal Team</a>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}
+
+{% block js %}
+    <script src="{% static 'js/legal/license.js' %}"></script>
+{% endblock js %}

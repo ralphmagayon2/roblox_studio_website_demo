@@ -6,9 +6,9 @@
     --cards: rgba(30, 35, 40, 0.95);
 }
 
-/* .main-rotating-square {
-    display: none;
-} */
+.main-rotating-square {
+    border-color: #00c896;
+}
 
 .robux-wrapper {
     position: relative;
@@ -29,11 +29,11 @@
     text-align: center;
     padding: 60px 20px;
     margin-bottom: 60px;
-    background: linear-gradient(135deg, rgba(0, 162, 255, 0.1) 0%, rgba(0, 162, 255, 0.1) 100%);
-    border: 2px solid rgba(0, 162, 255, 0.7);
+    background: linear-gradient(135deg, rgba(0, 200, 150, 0.3) 0%, rgba(0, 200, 150, 0.3) 100%);
+    border: 2px solid rgba(0, 200, 150, 0.7);
     border-radius: 20px;
     backdrop-filter: blur(5px);
-    box-shadow: 0 4px 6px rgba(0, 162, 255, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 200, 150, 0.9);
 }
 
 .robux-icon {
@@ -55,6 +55,8 @@
 .robux-hero h1 {
     font-size: 56px;
     color: var(--robux-green);
+    font-weight: 900;
+    letter-spacing: 2px;
     margin-bottom: 15px;
     text-shadow: 0 4px 20px rgba(0, 200, 150, 0.4);
     animation: slideDown 0.6s ease;

@@ -18,37 +18,43 @@
             <p class="auth-subtitle">Sign in to continue your adventure</p>
         </div>
 
-        <!-- Tab Swticher -->
+        <!-- Tab Switcher -->
         <div class="tab-switcher">
             <button class="tab-btn active" data-tab="login">Login</button>
             <button class="tab-btn" data-tab="signup">Sign Up</button>
         </div>
 
         <!-- Login Form -->
-        <form action="" class="auth-form active" id="loginForm">
-
+        <form action="{% url 'authentication:login' %}" method="POST" class="auth-form active" id="loginForm">
+            {% csrf_token %}
+            
             <div class="form-group">
                 <label class="form-label">Username or Email</label>
                 <input type="text" id="login_username" name="username" class="form-input" placeholder="Enter your username or email" required>
+                <div class="error"></div>
             </div>
 
             <div class="form-group">
                 <label class="form-label">Password</label>
-                <input type="password" id="login_password" name="password" class="form-input" placeholder="Enter your password" required>
+                <div class="password-input-wrapper">
+                    <input type="password" id="login_password" name="password" class="form-input" placeholder="Enter your password" required>
+                    <button type="button" class="password-toggle" id="toggleLoginPassword">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+                <div class="error"></div>
             </div>
 
             <div class="form-checkbox">
                 <div class="forgot-box">
-                    <input type="checkbox" id="rememberMe" name="remember">
+                    <input type="checkbox" id="rememberMe" name="remember_me">
                     <label for="rememberMe">Remember me</label>
                 </div>
 
                 <div class="forgot-password">
-                    <a href="#">Forgot password?</a>
+                    <a href="{% url 'authentication:password_reset_request' %}">Forgot password?</a>
                 </div>
             </div>
-
-            
 
             <button type="submit" class="btn-primary">LOGIN</button>
 
@@ -58,54 +64,80 @@
                 <div class="divider-line"></div>
             </div>
 
+            <!-- Social Buttons with Branding -->
             <div class="social-buttons">
-                <button type="button" class="btn-social google"><span><i class="fa-brands fa-google"></i></span> Google</button>
-                <button type="button" class="btn-social discord"><span class="fa-brands fa-discord"></span> Discord</button>
+                <button type="button" class="btn-social google">
+                    <span class="btn-social-icon"></span>
+                    <span class="btn-social-text">Google</span>
+                </button>
+                <button type="button" class="btn-social discord">
+                    <i class="fa-brands fa-discord"></i>
+                    <span class="btn-social-text">Discord</span>
+                </button>
             </div>
         </form>
 
-        <!-- Sign Up From -->
-        <form action="" class="auth-form" id="signupForm">
+        <!-- Sign Up Form -->
+        <form action="{% url 'authentication:signup' %}" method="POST" class="auth-form" id="signupForm">
+            {% csrf_token %}
+            
             <div class="form-group">
-                <label for="" class="form-label">Username</label>
+                <label class="form-label">Username</label>
                 <input type="text" name="username" id="signup_username" class="form-input" placeholder="Choose a username" required>
+                <div class="error"></div>
             </div>
 
             <div class="form-group">
-                <label for="" class="form-label">Email</label>
+                <label class="form-label">Email</label>
                 <input type="email" name="email" id="signup_email" class="form-input" placeholder="Enter your email" required>
+                <div class="error"></div>
             </div>
 
             <div class="form-group">
-                <label for="" class="form-label">Password</label>
-                <input type="password" name="password" id="signup_password" class="form-input" placeholder="Create a password" required>
+                <label class="form-label">Password</label>
+                <div class="password-input-wrapper">
+                    <input type="password" name="password" id="signup_password" class="form-input" placeholder="Create a password" required>
+                    <button type="button" class="password-toggle" id="toggleSignupPassword">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+                <div class="error"></div>
             </div>
 
             <div class="form-group">
-                <label for="" class="form-label">Confirm Password</label>
-                <input type="password" name="confirm_password" id="signup_confirm_password" class="form-input" placeholder="Confirm your password" required>
+                <label class="form-label">Confirm Password</label>
+                <div class="password-input-wrapper">
+                    <input type="password" name="confirm_password" id="signup_confirm_password" class="form-input" placeholder="Confirm your password" required>
+                    <button type="button" class="password-toggle" id="toggleConfirmPassword">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+                <div class="error"></div>
             </div>
 
             <div class="form-checkbox-terms">
-                <input type="checkbox" name="terms" id="agreeTerms" required>
-                <label for="agreeTerms">I agree to the Terms of Services</label>
+                <input type="checkbox" name="agree_terms" id="agreeTerms" required>
+                <label for="agreeTerms">I agree to the <a href="{% url 'authentication:term_of_use' %}" target="_blank">Terms of Service</a></label>
             </div>
 
             <button type="submit" class="btn-primary">CREATE ACCOUNT</button>
 
             <div class="divider">
                 <div class="divider-line"></div>
-                <span class="divider-text"></span>
+                <span class="divider-text">OR</span>
                 <div class="divider-line"></div>
             </div>
 
             <div class="social-buttons">
                 <button type="button" class="btn-social google">
-                    <span><i class="fa-brands fa-google"></i> </span> Google
+                    <span class="btn-social-icon">
+                        <i class="fa-brands fa-google"></i>
+                    </span>
+                    <span class="btn-social-text">Google</span>
                 </button>
-                <button type="button" class="btn-social discord"> 
-                    <span><i class="fa-brands fa-discord"></i> </span> Discord
-                </button> 
+                <button type="button" class="btn-social discord">
+                    <span><i class="fa-brands fa-discord"></i></span> Discord
+                </button>
             </div>
         </form>
         
@@ -115,5 +147,4 @@
 {% endblock content %}
 
 {% block js %}
-
 {% endblock js %}

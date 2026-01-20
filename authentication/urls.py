@@ -4,7 +4,26 @@ from . import views
 app_name = 'authentication'
 
 urlpatterns = [
+    # Main Pages
     path("join/", views.join, name="join"),
+    path("signup/", views.signup_view, name="signup"),
+    path("login/", views.login_view, name="login"),
+    path("logout/", views.logout_view, name="logout"),
+
+    # Email verification
+    path("verify-email/<uuid:token>/", views.verify_email_view, name="verify_email"),
+
+    path("verify-otp/", views.verify_otp_view, name="verify_otp"),
+    path("resend-otp/", views.resend_otp_view, name="resend_otp"),
+
+    # Password reset
+    path("reset-password/", views.password_reset_request_view, name="password_reset_request"),
+    path("reset-password/<uuid:token>/", views.password_reset_confirm_view, name="password_reset_confirm"),
+
+    # OAuth custom errors
+    path("oauth-error/", views.oauth_error, name="oauth-error"),
+
+
     path("games/", views.games, name="games"),
     path("create/", views.create, name="create"),
     path("robux/", views.robux, name="robux"),

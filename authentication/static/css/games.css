@@ -22,18 +22,20 @@
     text-align: center;
     margin-bottom: 60px;
     padding: 40px 20px;
-    background: linear-gradient(135deg, rgba(0, 162, 255, 0.1) 0%, rgba(0, 162, 255, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(0, 162, 255, 0.2) 0%, rgba(0, 162, 255, 0.3) 100%);
     border-radius: 20px;
     backdrop-filter: blur(5px);
     border: 2px solid rgba(0, 162, 255, 0.7);
-    box-shadow: 0 4px 6px rgba(0, 162, 255, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 162, 255, 0.9);
 }
 
 .games-hero h1 {
     font-size: 56px;
     color: var(--primary-color);
+    font-weight: 900;
+    letter-spacing: 2px;
     margin-bottom: 15px;
-    text-shadow: 0 4px 8px rgba(0, 162, 255, 0.3);
+    text-shadow: 0 4px 10px rgba(0, 162, 255, 0.5);
     animation: slideDown 0.6s ease;
 }
 

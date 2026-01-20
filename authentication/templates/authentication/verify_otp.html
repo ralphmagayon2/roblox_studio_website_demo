@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body_class %}hide-nav-footer{% endblock body_class %}
+
+{% block title %}Roblox Studio - Verify OTP{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/verify_otp.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+<main class="otp-wrapper">
+    <div class="otp-container">
+
+        {% comment %} Header {% endcomment %}
+        <div class="otp-header">
+            <div class="otp-icon">
+                <i class="fas fa-shield-halved"></i>
+            </div>
+            <h1 class="otp-title">Two Factor Authentication</h1>
+            <p class="otp-subtitle">
+                We've sent a 6-digit verification code to<br>
+                <span class="otp-email">{{ user.email }}</span>
+            </p>
+        </div>
+
+        {% comment %} OTP Form {% endcomment %}
+        <form action="" class="otp-form" id="otpForm">
+            {% csrf_token %}
+
+            <div class="otp-input-container">
+                <input type="number" class="otp-digit" maxlength="1" pattern="[0-9]" id="digit1" autofocus>
+                <input type="number" class="otp-digit" maxlength="1" pattern="[0-9]" id="digit2">
+                <input type="number" class="otp-digit" maxlength="1" pattern="[0-9]" id="digit3">
+                <input type="number" class="otp-digit" maxlength="1" pattern="[0-9]" id="digit4">
+                <input type="number" class="otp-digit" maxlength="1" pattern="[0-9]" id="digit5">
+                <input type="number" class="otp-digit" maxlength="1" pattern="[0-9]" id="digit6">
+            </div>
+
+            {% comment %} Hidden input to submit full OTP {% endcomment %}
+            <input type="hidden" name="otp" id="otpValue">
+
+            <button type="submit" class="btn-verify" id="verifyBtn">
+                <i class="fas fa-check-circle"></i> VERIFY CODE
+            </button>
+        </form>
+
+        {% comment %} Resend Section {% endcomment %}
+        <div class="resend-section">
+            <p class="resend-text">Didn't receive the code?</p>
+            <form method="POST" action="{% url 'authentication:resend_otp' %}" id="resendForm">
+                {% csrf_token %}
+
+                <button type="submit" class="btn-resend" id="resendBtn">
+                    <i class="fas fa-envelope"></i> Resend Code <span class="timer" id="timer"></span>
+                </button>
+            </form>
+        </div>
+
+        <a href="{% url 'authentication:join' %}" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Login
+        </a>
+    </div>
+</main>
+
+{% endblock content %}
+
+{% block js %}
+    <script src="{% static 'js/verify_otp.js' %}"></script>
+{% endblock js %}

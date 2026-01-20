@@ -477,7 +477,7 @@
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(135deg, rgba(171, 71, 88, 0.5) 0%, rgba(0, 162, 255, 0.5) 100%);
+    background: linear-gradient(135deg, rgba(171, 71, 88, 0.6) 0%, rgba(0, 162, 255, 0.6) 100%);
     border-radius: 20px;
     padding: 50px;
     border: 2px solid rgba(171, 71, 288, 0.5);
@@ -493,9 +493,10 @@
 }
 
 .cta-section p {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 16px;
     margin-bottom: 30px;
+    line-height: 1.6;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;

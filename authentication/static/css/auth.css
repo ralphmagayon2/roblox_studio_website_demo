@@ -46,6 +46,30 @@ html {
     background-color: #0077cc;
 }
 
+/* Hide navigation and footer on specific pages */
+body.hide-nav-footer nav,
+body.hide-nav-footer footer {
+    display: none !important;
+}
+
+/* Adjust contect wrapper when nav/footer are hidden */
+body.hide-nav-footer .content-wrapper,
+body.hide-nav-footer .otp-wrapper,
+body.hide-nav-footer .reset-wrapper {
+    padding-top: 0 !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure body fills viewport when nav/footer hidden */
+body.hide-nav-footer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Animated Background */
 .animated-background {
     position: fixed;
@@ -366,6 +390,15 @@ nav {
     cursor: pointer;
 }
 
+.form-checkbox-terms a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.form-checkbox-terms a:hover {
+    text-decoration: underline;
+}
+
 .forgot-box {
     display: flex;
     align-items: center;
@@ -433,7 +466,7 @@ nav {
     font-size: 13px;
 }
 
-/* Social Login Buttons */
+/* Social Login Buttons - UPDATED WITH BRANDING */
 .social-buttons {
     display: flex;
     gap: 10px;
@@ -442,7 +475,7 @@ nav {
 
 .btn-social {
     flex: 1;
-    padding: 12px;
+    padding: 12px 20px;
     background: rgba(255, 255, 255, 0.05);
     border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -454,31 +487,94 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn-social:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(0, 162, 255, 0.2);
     transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+.btn-social:active {
+    transform: translateY(0);
+}
+
+.btn-social:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Google Button */
 .btn-social.google {
-    border-color: rgba(234, 67, 53, 0.3);
+    background: #ffffff;
+    border-color: #dadce0;
+    color: #3c4043;
 }
 
 .btn-social.google:hover {
-    border-color: rgba(234, 67, 53, 0.6);
-    background: rgba(234, 67, 53, 0.1);
+    background: #f8f9fa;
+    border-color: #dadce0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.btn-social.google .btn-social-icon {
+    width: 18px;
+    height: 18px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-social.google .fa-google {
+    display: none;
+}
+
+/* Discord Button */
 .btn-social.discord {
-    border-color: rgba(88, 101, 242, 0.3);
+    background: #5865F2;
+    border-color: #5865F2;
+    color: #ffffff;
 }
 
 .btn-social.discord:hover {
-    border-color: rgba(88, 101, 242, 0.6);
-    background: rgba(88, 101, 242, 0.1);
+    background: #4752C4;
+    border-color: #4752C4;
+    box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
+}
+
+.btn-social.discord .fa-discord {
+    font-size: 20px;
+}
+
+/* Button Text */
+.btn-social-text {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+}
+
+/* Loading State */
+.btn-social .fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive - Stack buttons on mobile */
+@media (max-width: 480px) {
+    .social-buttons {
+        flex-direction: column;
+    }
+
+    .btn-social {
+        width: 100%;
+    }
 }
 
 /* Footer Style */
@@ -535,6 +631,155 @@ footer {
     color: rgba(255, 255, 255, 0.5);
     font-size: 13px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+/* ===========================================
+   FORM VALIDATION STYLES
+   =========================================== */
+
+/* Form Input States */
+.form-input {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Error State */
+.form-group.error .form-input {
+    border-color: #ff4757 !important;
+    box-shadow: 0 0 0 3px rgba(255, 71, 87, 0.1) !important;
+}
+
+/* Success State */
+.form-group.success .form-input {
+    border-color: #2ed573 !important;
+    box-shadow: 0 0 0 3px rgba(46, 213, 115, 0.1) !important;
+}
+
+/* Error Message Text (Below Input) */
+.form-group .error {
+    color: #ff4757;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+/* Show Error Message */
+.form-group.error .error {
+    height: auto;
+    opacity: 1;
+    margin-top: 8px;
+}
+
+/* Password Strength Indicator (Optional Enhancement) */
+.password-strength {
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin-top: 8px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.password-strength.visible {
+    opacity: 1;
+}
+
+.password-strength-bar {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.password-strength-bar.weak {
+    width: 33%;
+    background: #ff4757;
+}
+
+.password-strength-bar.medium {
+    width: 66%;
+    background: #ffa502;
+}
+
+.password-strength-bar.strong {
+    width: 100%;
+    background: #2ed573;
+}
+
+/* Password Input Wrapper */
+.password-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-input-wrapper .form-input {
+    padding-right: 45px; /* Make room for the eye icon */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px;
+    transition: color 0.3s ease;
+    z-index: 10;
+}
+
+.password-toggle:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.password-toggle:focus {
+    outline: none;
+}
+
+/* ===========================================
+   DJANGO MESSAGES (Server-side)
+   =========================================== */
+
+/* These styles are for messages.html include */
+/* See messages.css for the complete implementation */
+
+.slide-down {
+    animation: slideDownMessage 0.4s ease-out;
+}
+
+@keyframes slideDownMessage {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===========================================
+   LOADING STATE
+   =========================================== */
+
+.btn-primary:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btn-primary .fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 /* Animations */
